@@ -6,6 +6,7 @@ from tensorflow.keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
 from portfolio import Portfolio
 import os
+import subprocess
 
 # ---------- Modern Styling ----------
 st.set_page_config(page_title="S&P 500 AI Trader Dashboard", layout="wide")
@@ -71,12 +72,26 @@ tabs = st.tabs([
 with tabs[0]:
     st.subheader("🧭 AI Market Overview")
 
+    import subprocess
+
+    # --- Prediction Trigger ---
+    st.markdown("### 🔮 Generate Latest Predictions")
+    if st.button("Run predict_all.py"):
+        with st.spinner("Running prediction model..."):
+            try:
+                result = subprocess.run(["python", "predict_all.py"], capture_output=True, text=True, check=True)
+                st.success("✅ Predictions generated successfully.")
+                st.text(result.stdout)
+            except subprocess.CalledProcessError as e:
+                st.error("❌ Prediction script failed.")
+                st.text(e.stderr)
+
     PRED_FILE = "data/predictions_today.csv"
     METRICS_FILE = "models/metrics.json"
     MODEL_FILE = "models/lstm_model.h5"
 
-    if not os.path.exists(PRED_FILE):
-        st.warning("No predictions found. Run predict_all.py first.")
+    if not os.path.exists(PRED_FILE) or os.path.getsize(PRED_FILE) == 0:
+        st.warning("No predictions found. Please generate predictions first.")
     else:
         df = pd.read_csv(PRED_FILE)
         counts = df["Suggested Action"].value_counts()
@@ -159,7 +174,6 @@ with tabs[0]:
                     st.markdown("⚠️ Model retraining is CPU-intensive and may pause the UI for several seconds.")
                     confirm = st.checkbox("Yes, retrain now", key="retrain_confirm")
                     if st.button("🔁 Retrain Model") and confirm:
-                        import subprocess
                         with st.spinner("Retraining in progress..."):
                             subprocess.run(["python", "model.py"])
                         st.success("Model retrained successfully.")
