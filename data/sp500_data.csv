@@ -1,0 +1,504 @@
+Ticker,Timestamp,Price,Sentiment
+MMM,142.54,0,Industrials,2025-06-20 08:12:37
+AOS,63.09,0,Industrials,2025-06-20 08:12:37
+ABT,132.43,0,Health Care,2025-06-20 08:12:37
+ABBV,185.49,0,Health Care,2025-06-20 08:12:37
+ACN,306.2,0,Information Technology,2025-06-20 08:12:37
+ADBE,378.05,0,Information Technology,2025-06-20 08:12:37
+AMD,126.79,0,Information Technology,2025-06-20 08:12:37
+AES,10.51,0,Utilities,2025-06-20 08:12:37
+AFL,102.6,0,Financials,2025-06-20 08:12:37
+A,115.54,0,Health Care,2025-06-20 08:12:37
+APD,275.39,0,Materials,2025-06-20 08:12:37
+ABNB,132.19,0,Consumer Discretionary,2025-06-20 08:12:37
+AKAM,78.7,0,Information Technology,2025-06-20 08:12:37
+ALB,59.41,0,Materials,2025-06-20 08:12:37
+ARE,70.86,0,Real Estate,2025-06-20 08:12:37
+ALGN,180.07,0,Health Care,2025-06-20 08:12:37
+ALLE,136.8,0,Industrials,2025-06-20 08:12:37
+LNT,60.01,0,Utilities,2025-06-20 08:12:37
+ALL,195.69,0,Financials,2025-06-20 08:12:37
+GOOGL,173.31,0,Communication Services,2025-06-20 08:12:37
+GOOG,173.98,0,Communication Services,2025-06-20 08:12:37
+MO,59.49,0,Consumer Staples,2025-06-20 08:12:37
+AMZN,212.55,0,Consumer Discretionary,2025-06-20 08:12:37
+AMCR,9.06,0,Materials,2025-06-20 08:12:37
+AEE,94.41,0,Utilities,2025-06-20 08:12:37
+AEP,101.18,0,Utilities,2025-06-20 08:12:37
+AXP,296.42,0,Financials,2025-06-20 08:12:37
+AIG,84.27,0,Financials,2025-06-20 08:12:37
+AMT,215.48,0,Real Estate,2025-06-20 08:12:37
+AWK,141.12,0,Utilities,2025-06-20 08:12:37
+AMP,505.77,0,Financials,2025-06-20 08:12:37
+AME,177.76,0,Industrials,2025-06-20 08:12:37
+AMGN,289.44,0,Health Care,2025-06-20 08:12:37
+APH,93.46,0,Information Technology,2025-06-20 08:12:37
+ADI,229.71,0,Information Technology,2025-06-20 08:12:37
+ANSS,336.23,0,Information Technology,2025-06-20 08:12:37
+AON,350.74,0,Financials,2025-06-20 08:12:37
+APA,20.31,0,Energy,2025-06-20 08:12:37
+APO,133.09,0,Financials,2025-06-20 08:12:37
+AAPL,196.25,0,Information Technology,2025-06-20 08:12:37
+AMAT,172.94,0,Information Technology,2025-06-20 08:12:37
+APTV,67.67,0,Consumer Discretionary,2025-06-20 08:12:37
+ACGL,90.28,0,Financials,2025-06-20 08:12:37
+ADM,53.98,0,Consumer Staples,2025-06-20 08:12:37
+ANET,90.26,0,Information Technology,2025-06-20 08:12:37
+AJG,317.13,0,Financials,2025-06-20 08:12:37
+AIZ,195.5,0,Financials,2025-06-20 08:12:37
+T,27.67,0,Communication Services,2025-06-20 08:12:37
+ATO,152.36,0,Utilities,2025-06-20 08:12:37
+ADSK,295.09,0,Information Technology,2025-06-20 08:12:37
+ADP,306.66,0,Industrials,2025-06-20 08:12:37
+AZO,3602.69,0,Consumer Discretionary,2025-06-20 08:12:37
+AVB,206.61,0,Real Estate,2025-06-20 08:12:37
+AVY,173.96,0,Materials,2025-06-20 08:12:37
+AXON,770.37,0,Industrials,2025-06-20 08:12:37
+BKR,38.97,0,Energy,2025-06-20 08:12:37
+BALL,55.83,0,Materials,2025-06-20 08:12:37
+BAC,45.05,0,Financials,2025-06-20 08:12:37
+BAX,29.8,0,Health Care,2025-06-20 08:12:37
+BDX,168.63,0,Health Care,2025-06-20 08:12:37
+BRK-B,485.09,0,Financials,2025-06-20 08:12:37
+BBY,67.76,0,Consumer Discretionary,2025-06-20 08:12:37
+TECH,50.1,0,Health Care,2025-06-20 08:12:37
+BIIB,126.61,0,Health Care,2025-06-20 08:12:37
+BLK,978.23,0,Financials,2025-06-20 08:12:37
+BX,137.46,0,Financials,2025-06-20 08:12:37
+BK,91.6,0,Financials,2025-06-20 08:12:37
+BA,197.73,0,Industrials,2025-06-20 08:12:37
+BKNG,5277.57,0,Consumer Discretionary,2025-06-20 08:12:37
+BSX,101.39,0,Health Care,2025-06-20 08:12:37
+BMY,46.86,0,Health Care,2025-06-20 08:12:37
+AVGO,251.31,0,Information Technology,2025-06-20 08:12:37
+BR,237.77,0,Industrials,2025-06-20 08:12:37
+BRO,108.3,0,Financials,2025-06-20 08:12:37
+BF-B,25.69,0,Consumer Staples,2025-06-20 08:12:37
+BLDR,106.81,0,Industrials,2025-06-20 08:12:37
+BG,85.53,0,Consumer Staples,2025-06-20 08:12:37
+BXP,71.78,0,Real Estate,2025-06-20 08:12:37
+CHRW,93.43,0,Industrials,2025-06-20 08:12:37
+CDNS,296.98,0,Information Technology,2025-06-20 08:12:37
+CZR,27.75,0,Consumer Discretionary,2025-06-20 08:12:37
+CPT,115.63,0,Real Estate,2025-06-20 08:12:37
+CPB,31.85,0,Consumer Staples,2025-06-20 08:12:37
+COF,197.18,0,Financials,2025-06-20 08:12:37
+CAH,165.4,0,Health Care,2025-06-20 08:12:37
+KMX,64.32,0,Consumer Discretionary,2025-06-20 08:12:37
+CCL,23.6,0,Consumer Discretionary,2025-06-20 08:12:37
+CARR,69.86,0,Industrials,2025-06-20 08:12:37
+CAT,359.82,0,Industrials,2025-06-20 08:12:37
+CBOE,227.38,0,Financials,2025-06-20 08:12:37
+CBRE,133.48,0,Real Estate,2025-06-20 08:12:37
+CDW,169.95,0,Information Technology,2025-06-20 08:12:37
+COR,296.72,0,Health Care,2025-06-20 08:12:37
+CNC,55.16,0,Health Care,2025-06-20 08:12:37
+CNP,35.58,0,Utilities,2025-06-20 08:12:37
+CF,100.31,0,Materials,2025-06-20 08:12:37
+CRL,145.33,0,Health Care,2025-06-20 08:12:37
+SCHW,89.91,0,Financials,2025-06-20 08:12:37
+CHTR,377.41,0,Communication Services,2025-06-20 08:12:37
+CVX,148.22,0,Energy,2025-06-20 08:12:37
+CMG,51.83,0,Consumer Discretionary,2025-06-20 08:12:37
+CB,282.11,0,Financials,2025-06-20 08:12:37
+CHD,95.88,0,Consumer Staples,2025-06-20 08:12:37
+CI,314.49,0,Health Care,2025-06-20 08:12:37
+CINF,145.64,0,Financials,2025-06-20 08:12:37
+CTAS,220.31,0,Industrials,2025-06-20 08:12:37
+CSCO,65.86,0,Information Technology,2025-06-20 08:12:37
+C,78.35,0,Financials,2025-06-20 08:12:37
+CFG,41.33,0,Financials,2025-06-20 08:12:37
+CLX,120.93,0,Consumer Staples,2025-06-20 08:12:37
+CME,272.1,0,Financials,2025-06-20 08:12:37
+CMS,68.81,0,Utilities,2025-06-20 08:12:37
+KO,69.21,0,Consumer Staples,2025-06-20 08:12:37
+CTSH,79.14,0,Information Technology,2025-06-20 08:12:37
+COIN,295.16,0,Financials,2025-06-20 08:12:37
+CL,88.18,0,Consumer Staples,2025-06-20 08:12:37
+CMCSA,34.25,0,Communication Services,2025-06-20 08:12:37
+CAG,21.5,0,Consumer Staples,2025-06-20 08:12:37
+COP,93.8,0,Energy,2025-06-20 08:12:37
+ED,100.73,0,Utilities,2025-06-20 08:12:37
+STZ,159.99,0,Consumer Staples,2025-06-20 08:12:37
+CEG,306.32,0,Utilities,2025-06-20 08:12:37
+COO,69.83,0,Health Care,2025-06-20 08:12:37
+CPRT,47.86,0,Industrials,2025-06-20 08:12:37
+GLW,50.45,0,Information Technology,2025-06-20 08:12:37
+CPAY,314.42,0,Financials,2025-06-20 08:12:37
+CTVA,74.13,0,Materials,2025-06-20 08:12:37
+CSGP,79.57,0,Real Estate,2025-06-20 08:12:37
+COST,974.62,0,Consumer Staples,2025-06-20 08:12:37
+CTRA,26.75,0,Energy,2025-06-20 08:12:37
+CRWD,485.08,0,Information Technology,2025-06-20 08:12:37
+CCI,99.38,0,Real Estate,2025-06-20 08:12:37
+CSX,32.24,0,Industrials,2025-06-20 08:12:37
+CMI,314.84,0,Industrials,2025-06-20 08:12:37
+CVS,66.86,0,Health Care,2025-06-20 08:12:37
+DHR,194.37,0,Health Care,2025-06-20 08:12:37
+DRI,222.84,0,Consumer Discretionary,2025-06-20 08:12:37
+DVA,135.75,0,Health Care,2025-06-20 08:12:37
+DAY,56.25,0,Industrials,2025-06-20 08:12:37
+DECK,101.0,0,Consumer Discretionary,2025-06-20 08:12:37
+DE,525.08,0,Industrials,2025-06-20 08:12:37
+DELL,116.56,0,Information Technology,2025-06-20 08:12:37
+DAL,47.55,0,Industrials,2025-06-20 08:12:37
+DVN,34.01,0,Energy,2025-06-20 08:12:37
+DXCM,80.97,0,Health Care,2025-06-20 08:12:37
+FANG,148.73,0,Energy,2025-06-20 08:12:37
+DLR,176.66,0,Real Estate,2025-06-20 08:12:37
+DG,112.28,0,Consumer Staples,2025-06-20 08:12:37
+DLTR,97.58,0,Consumer Staples,2025-06-20 08:12:37
+D,54.19,0,Utilities,2025-06-20 08:12:37
+DPZ,446.77,0,Consumer Discretionary,2025-06-20 08:12:37
+DASH,220.52,0,Consumer Discretionary,2025-06-20 08:12:37
+DOV,175.64,0,Industrials,2025-06-20 08:12:37
+DOW,28.5,0,Materials,2025-06-20 08:12:37
+DHI,121.27,0,Consumer Discretionary,2025-06-20 08:12:37
+DTE,131.79,0,Utilities,2025-06-20 08:12:37
+DUK,114.58,0,Utilities,2025-06-20 08:12:37
+DD,66.85,0,Materials,2025-06-20 08:12:37
+EMN,74.71,0,Materials,2025-06-20 08:12:37
+ETN,334.73,0,Industrials,2025-06-20 08:12:37
+EBAY,77.53,0,Consumer Discretionary,2025-06-20 08:12:37
+ECL,260.17,0,Materials,2025-06-20 08:12:37
+EIX,50.48,0,Utilities,2025-06-20 08:12:37
+EW,74.0,0,Health Care,2025-06-20 08:12:37
+EA,151.0,0,Communication Services,2025-06-20 08:12:37
+ELV,375.94,0,Health Care,2025-06-20 08:12:37
+EMR,128.65,0,Industrials,2025-06-20 08:12:37
+ENPH,36.38,0,Information Technology,2025-06-20 08:12:37
+ETR,80.92,0,Utilities,2025-06-20 08:12:37
+EOG,123.78,0,Energy,2025-06-20 08:12:37
+EPAM,164.98,0,Information Technology,2025-06-20 08:12:37
+EQT,59.37,0,Energy,2025-06-20 08:12:37
+EFX,253.39,0,Industrials,2025-06-20 08:12:37
+EQIX,886.51,0,Real Estate,2025-06-20 08:12:37
+EQR,68.86,0,Real Estate,2025-06-20 08:12:37
+ERIE,348.44,0,Financials,2025-06-20 08:12:37
+ESS,284.08,0,Real Estate,2025-06-20 08:12:37
+EL,74.75,0,Consumer Staples,2025-06-20 08:12:37
+EG,332.91,0,Financials,2025-06-20 08:12:37
+EVRG,66.77,0,Utilities,2025-06-20 08:12:37
+ES,62.4,0,Utilities,2025-06-20 08:12:37
+EXC,42.35,0,Utilities,2025-06-20 08:12:37
+EXE,120.75,0,Energy,2025-06-20 08:12:37
+EXPE,162.46,0,Consumer Discretionary,2025-06-20 08:12:37
+EXPD,113.09,0,Industrials,2025-06-20 08:12:37
+EXR,146.46,0,Real Estate,2025-06-20 08:12:37
+XOM,113.21,0,Energy,2025-06-20 08:12:37
+FFIV,286.37,0,Information Technology,2025-06-20 08:12:37
+FDS,425.08,0,Financials,2025-06-20 08:12:37
+FICO,1762.96,0,Information Technology,2025-06-20 08:12:37
+FAST,41.48,0,Industrials,2025-06-20 08:12:37
+FRT,95.63,0,Real Estate,2025-06-20 08:12:37
+FDX,223.26,0,Industrials,2025-06-20 08:12:37
+FIS,80.48,0,Financials,2025-06-20 08:12:37
+FITB,38.76,0,Financials,2025-06-20 08:12:37
+FSLR,143.67,0,Information Technology,2025-06-20 08:12:37
+FE,39.74,0,Utilities,2025-06-20 08:12:37
+FI,161.35,0,Financials,2025-06-20 08:12:37
+F,10.42,0,Consumer Discretionary,2025-06-20 08:12:37
+FTNT,100.84,0,Information Technology,2025-06-20 08:12:37
+FTV,69.85,0,Industrials,2025-06-20 08:12:37
+FOXA,54.7,0,Communication Services,2025-06-20 08:12:37
+FOX,50.21,0,Communication Services,2025-06-20 08:12:37
+BEN,22.6,0,Financials,2025-06-20 08:12:37
+FCX,41.19,0,Materials,2025-06-20 08:12:37
+GRMN,198.3,0,Consumer Discretionary,2025-06-20 08:12:37
+IT,399.33,0,Information Technology,2025-06-20 08:12:37
+GE,235.9,0,Industrials,2025-06-20 08:12:37
+GEHC,71.88,0,Health Care,2025-06-20 08:12:37
+GEV,490.36,0,Industrials,2025-06-20 08:12:37
+GEN,29.36,0,Information Technology,2025-06-20 08:12:37
+GNRC,125.52,0,Industrials,2025-06-20 08:12:37
+GD,278.52,0,Industrials,2025-06-20 08:12:37
+GIS,52.95,0,Consumer Staples,2025-06-20 08:12:37
+GM,48.1,0,Consumer Discretionary,2025-06-20 08:12:37
+GPC,118.85,0,Consumer Discretionary,2025-06-20 08:12:37
+GILD,108.0,0,Health Care,2025-06-20 08:12:37
+GPN,76.14,0,Financials,2025-06-20 08:12:37
+GL,119.74,0,Financials,2025-06-20 08:12:37
+GDDY,176.41,0,Information Technology,2025-06-20 08:12:37
+GS,635.61,0,Financials,2025-06-20 08:12:37
+HAL,22.28,0,Energy,2025-06-20 08:12:37
+HIG,124.91,0,Financials,2025-06-20 08:12:37
+HAS,67.93,0,Consumer Discretionary,2025-06-20 08:12:37
+HCA,377.02,0,Health Care,2025-06-20 08:12:37
+DOC,17.03,0,Real Estate,2025-06-20 08:12:37
+HSIC,71.13,0,Health Care,2025-06-20 08:12:37
+HSY,169.75,0,Consumer Staples,2025-06-20 08:12:37
+HES,143.58,0,Energy,2025-06-20 08:12:37
+HPE,17.79,0,Information Technology,2025-06-20 08:12:37
+HLT,247.57,0,Consumer Discretionary,2025-06-20 08:12:37
+HOLX,63.98,0,Health Care,2025-06-20 08:12:37
+HD,346.99,0,Consumer Discretionary,2025-06-20 08:12:37
+HON,221.78,0,Industrials,2025-06-20 08:12:37
+HRL,30.16,0,Consumer Staples,2025-06-20 08:12:37
+HST,15.72,0,Real Estate,2025-06-20 08:12:37
+HWM,170.23,0,Industrials,2025-06-20 08:12:37
+HPQ,24.17,0,Information Technology,2025-06-20 08:12:37
+HUBB,398.77,0,Industrials,2025-06-20 08:12:37
+HUM,243.42,0,Health Care,2025-06-20 08:12:37
+HBAN,15.72,0,Financials,2025-06-20 08:12:37
+HII,234.22,0,Industrials,2025-06-20 08:12:37
+IBM,283.23,0,Information Technology,2025-06-20 08:12:37
+IEX,175.12,0,Industrials,2025-06-20 08:12:37
+IDXX,520.06,0,Health Care,2025-06-20 08:12:37
+ITW,241.35,0,Industrials,2025-06-20 08:12:37
+INCY,68.27,0,Health Care,2025-06-20 08:12:37
+IR,80.81,0,Industrials,2025-06-20 08:12:37
+PODD,301.76,0,Health Care,2025-06-20 08:12:37
+INTC,21.48,0,Information Technology,2025-06-20 08:12:37
+ICE,179.8,0,Financials,2025-06-20 08:12:37
+IFF,74.89,0,Materials,2025-06-20 08:12:37
+IP,46.14,0,Materials,2025-06-20 08:12:37
+IPG,23.09,0,Communication Services,2025-06-20 08:12:37
+INTU,754.8,0,Information Technology,2025-06-20 08:12:37
+ISRG,509.35,0,Health Care,2025-06-20 08:12:37
+IVZ,14.73,0,Financials,2025-06-20 08:12:37
+INVH,33.74,0,Real Estate,2025-06-20 08:12:37
+IQV,154.61,0,Health Care,2025-06-20 08:12:37
+IRM,102.65,0,Real Estate,2025-06-20 08:12:37
+JBHT,138.93,0,Industrials,2025-06-20 08:12:37
+JBL,204.66,0,Information Technology,2025-06-20 08:12:37
+JKHY,181.47,0,Financials,2025-06-20 08:12:37
+J,127.3,0,Industrials,2025-06-20 08:12:37
+JNJ,150.76,0,Health Care,2025-06-20 08:12:37
+JCI,103.47,0,Industrials,2025-06-20 08:12:37
+JPM,273.95,0,Financials,2025-06-20 08:12:37
+JNPR,35.85,0,Information Technology,2025-06-20 08:12:37
+K,78.92,0,Consumer Staples,2025-06-20 08:12:37
+KVUE,21.36,0,Consumer Staples,2025-06-20 08:12:37
+KDP,33.2,0,Consumer Staples,2025-06-20 08:12:37
+KEY,16.01,0,Financials,2025-06-20 08:12:37
+KEYS,160.14,0,Information Technology,2025-06-20 08:12:37
+KMB,127.89,0,Consumer Staples,2025-06-20 08:12:37
+KIM,21.0,0,Real Estate,2025-06-20 08:12:37
+KMI,27.58,0,Energy,2025-06-20 08:12:37
+KKR,122.38,0,Financials,2025-06-20 08:12:37
+KLAC,871.16,0,Information Technology,2025-06-20 08:12:37
+KHC,25.68,0,Consumer Staples,2025-06-20 08:12:37
+KR,65.52,0,Consumer Staples,2025-06-20 08:12:37
+LHX,248.85,0,Industrials,2025-06-20 08:12:37
+LH,261.4,0,Health Care,2025-06-20 08:12:37
+LRCX,92.28,0,Information Technology,2025-06-20 08:12:37
+LW,53.22,0,Consumer Staples,2025-06-20 08:12:37
+LVS,41.78,0,Consumer Discretionary,2025-06-20 08:12:37
+LDOS,148.35,0,Industrials,2025-06-20 08:12:37
+LEN,103.39,0,Consumer Discretionary,2025-06-20 08:12:37
+LII,547.93,0,Industrials,2025-06-20 08:12:37
+LLY,784.5,0,Health Care,2025-06-20 08:12:37
+LIN,458.7,0,Materials,2025-06-20 08:12:37
+LYV,148.26,0,Communication Services,2025-06-20 08:12:37
+LKQ,36.84,0,Consumer Discretionary,2025-06-20 08:12:37
+LMT,468.59,0,Industrials,2025-06-20 08:12:37
+L,88.33,0,Financials,2025-06-20 08:12:37
+LOW,210.87,0,Consumer Discretionary,2025-06-20 08:12:37
+LULU,228.59,0,Consumer Discretionary,2025-06-20 08:12:37
+LYB,58.64,0,Materials,2025-06-20 08:12:37
+MTB,181.65,0,Financials,2025-06-20 08:12:37
+MPC,167.44,0,Energy,2025-06-20 08:12:37
+MKTX,220.73,0,Financials,2025-06-20 08:12:37
+MAR,257.52,0,Consumer Discretionary,2025-06-20 08:12:37
+MMC,214.34,0,Financials,2025-06-20 08:12:37
+MLM,538.51,0,Materials,2025-06-20 08:12:37
+MAS,60.91,0,Industrials,2025-06-20 08:12:37
+MA,538.92,0,Financials,2025-06-20 08:12:37
+MTCH,30.3,0,Communication Services,2025-06-20 08:12:37
+MKC,73.2,0,Consumer Staples,2025-06-20 08:12:37
+MCD,289.6,0,Consumer Discretionary,2025-06-20 08:12:37
+MCK,728.83,0,Health Care,2025-06-20 08:12:37
+MDT,85.73,0,Health Care,2025-06-20 08:12:37
+MRK,79.3,0,Health Care,2025-06-20 08:12:37
+META,695.4,0,Communication Services,2025-06-20 08:12:37
+MET,78.55,0,Financials,2025-06-20 08:12:37
+MTD,1146.94,0,Health Care,2025-06-20 08:12:37
+MGM,33.95,0,Consumer Discretionary,2025-06-20 08:12:37
+MCHP,68.02,0,Information Technology,2025-06-20 08:12:37
+MU,121.8,0,Information Technology,2025-06-20 08:12:37
+MSFT,480.24,0,Information Technology,2025-06-20 08:12:37
+MAA,148.92,0,Real Estate,2025-06-20 08:12:37
+MRNA,25.42,0,Health Care,2025-06-20 08:12:37
+MHK,98.0,0,Consumer Discretionary,2025-06-20 08:12:37
+MOH,295.33,0,Health Care,2025-06-20 08:12:37
+TAP,48.81,0,Consumer Staples,2025-06-20 08:12:37
+MDLZ,66.35,0,Consumer Staples,2025-06-20 08:12:37
+MPWR,693.24,0,Information Technology,2025-06-20 08:12:37
+MNST,63.18,0,Consumer Staples,2025-06-20 08:12:37
+MCO,470.52,0,Financials,2025-06-20 08:12:37
+MS,132.52,0,Financials,2025-06-20 08:12:37
+MOS,36.44,0,Materials,2025-06-20 08:12:37
+MSI,404.74,0,Information Technology,2025-06-20 08:12:37
+MSCI,543.74,0,Financials,2025-06-20 08:12:37
+NDAQ,86.37,0,Financials,2025-06-20 08:12:37
+NTAP,102.74,0,Information Technology,2025-06-20 08:12:37
+NFLX,1222.2,0,Communication Services,2025-06-20 08:12:37
+NEM,58.27,0,Materials,2025-06-20 08:12:37
+NWSA,28.07,0,Communication Services,2025-06-20 08:12:37
+NWS,32.3,0,Communication Services,2025-06-20 08:12:37
+NEE,71.58,0,Utilities,2025-06-20 08:12:37
+NKE,59.51,0,Consumer Discretionary,2025-06-20 08:12:37
+NI,39.29,0,Utilities,2025-06-20 08:12:37
+NDSN,213.58,0,Industrials,2025-06-20 08:12:37
+NSC,252.92,0,Industrials,2025-06-20 08:12:37
+NTRS,111.01,0,Financials,2025-06-20 08:12:37
+NOC,494.44,0,Industrials,2025-06-20 08:12:37
+NCLH,18.4,0,Consumer Discretionary,2025-06-20 08:12:37
+NRG,152.66,0,Utilities,2025-06-20 08:12:37
+NUE,126.2,0,Materials,2025-06-20 08:12:37
+NVDA,145.47,0,Information Technology,2025-06-20 08:12:37
+NVR,6980.99,0,Consumer Discretionary,2025-06-20 08:12:37
+NXPI,211.61,0,Information Technology,2025-06-20 08:12:37
+ORLY,88.31,0,Consumer Discretionary,2025-06-20 08:12:37
+OXY,45.37,0,Energy,2025-06-20 08:12:37
+ODFL,155.94,0,Industrials,2025-06-20 08:12:37
+OMC,69.44,0,Communication Services,2025-06-20 08:12:37
+ON,52.27,0,Information Technology,2025-06-20 08:12:37
+OKE,81.17,0,Energy,2025-06-20 08:12:37
+ORCL,210.71,0,Information Technology,2025-06-20 08:12:37
+OTIS,95.68,0,Industrials,2025-06-20 08:12:37
+PCAR,90.7,0,Industrials,2025-06-20 08:12:37
+PKG,186.22,0,Materials,2025-06-20 08:12:37
+PLTR,139.94,0,Information Technology,2025-06-20 08:12:37
+PANW,199.73,0,Information Technology,2025-06-20 08:12:37
+PARA,12.05,0,Communication Services,2025-06-20 08:12:37
+PH,651.83,0,Industrials,2025-06-20 08:12:37
+PAYX,150.29,0,Industrials,2025-06-20 08:12:37
+PAYC,232.84,0,Industrials,2025-06-20 08:12:37
+PYPL,68.56,0,Financials,2025-06-20 08:12:37
+PNR,96.94,0,Industrials,2025-06-20 08:12:37
+PEP,129.05,0,Consumer Staples,2025-06-20 08:12:37
+PFE,23.89,0,Health Care,2025-06-20 08:12:37
+PCG,14.08,0,Utilities,2025-06-20 08:12:37
+PM,182.6,0,Consumer Staples,2025-06-20 08:12:37
+PSX,124.83,0,Energy,2025-06-20 08:12:37
+PNW,88.52,0,Utilities,2025-06-20 08:12:37
+PNC,175.31,0,Financials,2025-06-20 08:12:37
+POOL,284.86,0,Consumer Discretionary,2025-06-20 08:12:37
+PPG,108.25,0,Materials,2025-06-20 08:12:37
+PPL,33.59,0,Utilities,2025-06-20 08:12:37
+PFG,75.96,0,Financials,2025-06-20 08:12:37
+PG,158.02,0,Consumer Staples,2025-06-20 08:12:37
+PGR,260.22,0,Financials,2025-06-20 08:12:37
+PLD,105.06,0,Real Estate,2025-06-20 08:12:37
+PRU,104.12,0,Financials,2025-06-20 08:12:37
+PEG,82.07,0,Utilities,2025-06-20 08:12:37
+PTC,166.63,0,Information Technology,2025-06-20 08:12:37
+PSA,290.81,0,Real Estate,2025-06-20 08:12:37
+PHM,99.13,0,Consumer Discretionary,2025-06-20 08:12:37
+PWR,360.3,0,Industrials,2025-06-20 08:12:37
+QCOM,153.67,0,Information Technology,2025-06-20 08:12:37
+DGX,179.77,0,Health Care,2025-06-20 08:12:37
+RL,267.82,0,Consumer Discretionary,2025-06-20 08:12:37
+RJF,148.2,0,Financials,2025-06-20 08:12:37
+RTX,145.88,0,Industrials,2025-06-20 08:12:37
+O,57.58,0,Real Estate,2025-06-20 08:12:37
+REG,70.72,0,Real Estate,2025-06-20 08:12:37
+REGN,513.54,0,Health Care,2025-06-20 08:12:37
+RF,21.97,0,Financials,2025-06-20 08:12:37
+RSG,248.4,0,Industrials,2025-06-20 08:12:37
+RMD,250.87,0,Health Care,2025-06-20 08:12:37
+RVTY,94.43,0,Health Care,2025-06-20 08:12:37
+ROK,321.73,0,Industrials,2025-06-20 08:12:37
+ROL,56.1,0,Industrials,2025-06-20 08:12:37
+ROP,555.69,0,Information Technology,2025-06-20 08:12:37
+ROST,128.02,0,Consumer Discretionary,2025-06-20 08:12:37
+RCL,267.77,0,Consumer Discretionary,2025-06-20 08:12:37
+SPGI,502.63,0,Financials,2025-06-20 08:12:37
+CRM,259.55,0,Information Technology,2025-06-20 08:12:37
+SBAC,228.27,0,Real Estate,2025-06-20 08:12:37
+SLB,35.85,0,Energy,2025-06-20 08:12:37
+STX,131.26,0,Information Technology,2025-06-20 08:12:37
+SRE,74.39,0,Utilities,2025-06-20 08:12:37
+NOW,981.41,0,Information Technology,2025-06-20 08:12:37
+SHW,331.53,0,Materials,2025-06-20 08:12:37
+SPG,157.09,0,Real Estate,2025-06-20 08:12:37
+SWKS,71.63,0,Information Technology,2025-06-20 08:12:37
+SJM,95.97,0,Consumer Staples,2025-06-20 08:12:37
+SW,42.4,0,Materials,2025-06-20 08:12:37
+SNA,306.68,0,Industrials,2025-06-20 08:12:37
+SOLV,72.63,0,Health Care,2025-06-20 08:12:37
+SO,88.63,0,Utilities,2025-06-20 08:12:37
+LUV,31.17,0,Industrials,2025-06-20 08:12:37
+SWK,64.6,0,Industrials,2025-06-20 08:12:37
+SBUX,92.27,0,Consumer Discretionary,2025-06-20 08:12:37
+STT,99.3,0,Financials,2025-06-20 08:12:37
+STLD,130.07,0,Materials,2025-06-20 08:12:37
+STE,236.17,0,Health Care,2025-06-20 08:12:37
+SYK,373.28,0,Health Care,2025-06-20 08:12:37
+SMCI,44.44,0,Information Technology,2025-06-20 08:12:37
+SYF,61.44,0,Financials,2025-06-20 08:12:37
+SNPS,473.69,0,Information Technology,2025-06-20 08:12:37
+SYY,73.99,0,Consumer Staples,2025-06-20 08:12:37
+TMUS,220.97,0,Communication Services,2025-06-20 08:12:37
+TROW,92.1,0,Financials,2025-06-20 08:12:37
+TTWO,238.49,0,Communication Services,2025-06-20 08:12:37
+TPR,84.25,0,Consumer Discretionary,2025-06-20 08:12:37
+TRGP,169.3,0,Energy,2025-06-20 08:12:37
+TGT,95.14,0,Consumer Staples,2025-06-20 08:12:37
+TEL,163.8,0,Information Technology,2025-06-20 08:12:37
+TDY,488.92,0,Information Technology,2025-06-20 08:12:37
+TER,86.31,0,Information Technology,2025-06-20 08:12:37
+TSLA,322.1,0,Consumer Discretionary,2025-06-20 08:12:37
+TXN,198.33,0,Information Technology,2025-06-20 08:12:37
+TPL,1079.07,0,Energy,2025-06-20 08:12:37
+TXT,76.62,0,Industrials,2025-06-20 08:12:37
+TMO,392.49,0,Health Care,2025-06-20 08:12:37
+TJX,122.53,0,Consumer Discretionary,2025-06-20 08:12:37
+TKO,175.93,0,Communication Services,2025-06-20 08:12:37
+TSCO,52.03,0,Consumer Discretionary,2025-06-20 08:12:37
+TT,419.83,0,Industrials,2025-06-20 08:12:37
+TDG,1414.49,0,Industrials,2025-06-20 08:12:37
+TRV,265.02,0,Financials,2025-06-20 08:12:37
+TRMB,71.7,0,Information Technology,2025-06-20 08:12:37
+TFC,39.81,0,Financials,2025-06-20 08:12:37
+TYL,568.64,0,Information Technology,2025-06-20 08:12:37
+TSN,54.34,0,Consumer Staples,2025-06-20 08:12:37
+USB,43.27,0,Financials,2025-06-20 08:12:37
+UBER,83.44,0,Industrials,2025-06-20 08:12:37
+UDR,41.12,0,Real Estate,2025-06-20 08:12:37
+ULTA,473.17,0,Consumer Discretionary,2025-06-20 08:12:37
+UNP,222.02,0,Industrials,2025-06-20 08:12:37
+UAL,74.29,0,Industrials,2025-06-20 08:12:37
+UPS,99.19,0,Industrials,2025-06-20 08:12:37
+URI,698.78,0,Industrials,2025-06-20 08:12:37
+UNH,307.31,0,Health Care,2025-06-20 08:12:37
+UHS,171.15,0,Health Care,2025-06-20 08:12:37
+VLO,139.43,0,Energy,2025-06-20 08:12:37
+VTR,62.69,0,Real Estate,2025-06-20 08:12:37
+VLTO,97.03,0,Industrials,2025-06-20 08:12:37
+VRSN,281.1,0,Information Technology,2025-06-20 08:12:37
+VRSK,306.23,0,Industrials,2025-06-20 08:12:37
+VZ,41.66,0,Communication Services,2025-06-20 08:12:37
+VRTX,448.37,0,Health Care,2025-06-20 08:12:37
+VTRS,8.77,0,Health Care,2025-06-20 08:12:37
+VICI,32.33,0,Real Estate,2025-06-20 08:12:37
+V,340.42,0,Financials,2025-06-20 08:12:37
+VST,181.19,0,Utilities,2025-06-20 08:12:37
+VMC,258.05,0,Materials,2025-06-20 08:12:37
+WRB,72.78,0,Financials,2025-06-20 08:12:37
+GWW,1042.45,0,Industrials,2025-06-20 08:12:37
+WAB,200.74,0,Industrials,2025-06-20 08:12:37
+WBA,11.39,0,Consumer Staples,2025-06-20 08:12:37
+WMT,95.13,0,Consumer Staples,2025-06-20 08:12:37
+DIS,117.83,0,Communication Services,2025-06-20 08:12:37
+WBD,10.59,0,Communication Services,2025-06-20 08:12:37
+WM,233.23,0,Industrials,2025-06-20 08:12:37
+WAT,339.38,0,Health Care,2025-06-20 08:12:37
+WEC,103.83,0,Utilities,2025-06-20 08:12:37
+WFC,74.75,0,Financials,2025-06-20 08:12:37
+WELL,153.18,0,Real Estate,2025-06-20 08:12:37
+WST,218.12,0,Health Care,2025-06-20 08:12:37
+WDC,59.18,0,Information Technology,2025-06-20 08:12:37
+WY,25.97,0,Real Estate,2025-06-20 08:12:37
+WSM,160.45,0,Consumer Discretionary,2025-06-20 08:12:37
+WMB,59.09,0,Energy,2025-06-20 08:12:37
+WTW,297.51,0,Financials,2025-06-20 08:12:37
+WDAY,236.89,0,Information Technology,2025-06-20 08:12:37
+WYNN,86.92,0,Consumer Discretionary,2025-06-20 08:12:37
+XEL,66.27,0,Utilities,2025-06-20 08:12:37
+XYL,125.14,0,Industrials,2025-06-20 08:12:37
+YUM,138.36,0,Consumer Discretionary,2025-06-20 08:12:37
+ZBRA,291.72,0,Information Technology,2025-06-20 08:12:37
+ZBH,90.56,0,Health Care,2025-06-20 08:12:37
+ZTS,155.1,0,Health Care,2025-06-20 08:12:37
