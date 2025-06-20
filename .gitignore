@@ -21,3 +21,5 @@ data/backtest_trades.csv
 # OS clutter
 .DS_Store
 Thumbs.db
+
+.venv/
