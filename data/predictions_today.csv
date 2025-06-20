@@ -1,0 +1,504 @@
+Ticker,Sector,Price,Sentiment,Prediction,Confidence,Expected Return %,Volatility Class,Suggested Action,Reason,Timestamp
+COF,Financials,198.6,0,↓,40.47,-0.41,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CMCSA,Communication Services,34.57,0,↓,40.39,1.23,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CHTR,Communication Services,385.4,0,↓,40.29,1.2,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+PARA,Communication Services,12.26,0,↓,40.27,0.59,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+OXY,Energy,45.61,0,↓,39.43,-0.48,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+MU,Information Technology,123.06,0,↓,39.36,0.53,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+XOM,Energy,114.29,0,↓,39.3,-0.34,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+BKR,Energy,39.1,0,↓,39.23,-1.13,Medium,Sell,Low confidence (39.20000076293945%) and expected return < -1%,2025-06-20 13:50:54
+AAPL,Information Technology,198.77,0,↓,39.18,0.37,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+ERIE,Financials,355.55,0,↓,39.01,-0.31,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+EA,Communication Services,150.01,0,↓,38.99,0.43,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+NFLX,Communication Services,1228.28,0,↓,38.96,0.85,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+GOOG,Communication Services,170.0,0,↓,38.88,0.24,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+TSLA,Consumer Discretionary,321.5,0,↓,38.87,0.28,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+LEN,Consumer Discretionary,105.55,0,↓,38.62,0.18,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+EQT,Energy,60.27,0,↓,38.57,-0.78,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+DHI,Consumer Discretionary,123.25,0,↓,38.54,0.35,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CMG,Consumer Discretionary,52.5,0,↓,38.52,0.37,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+NVR,Consumer Discretionary,7140.01,0,↓,38.43,0.32,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+PHM,Consumer Discretionary,101.23,0,↓,38.42,0.39,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+WYNN,Consumer Discretionary,87.86,0,↓,38.37,0.24,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+GOOGL,Communication Services,168.92,0,↓,38.3,0.18,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+SYF,Financials,61.84,0,↓,38.29,-0.25,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+KMI,Energy,27.97,0,↓,38.29,-0.83,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+NKE,Consumer Discretionary,59.45,0,↓,38.27,0.03,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+SLB,Energy,35.57,0,↓,38.27,-1.22,Medium,Sell,Low confidence (38.29999923706055%) and expected return < -1%,2025-06-20 13:50:54
+LRCX,Information Technology,89.88,0,↓,38.2,0.03,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+PFE,Health Care,23.89,0,↓,38.17,-0.38,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+AMAT,Information Technology,168.88,0,↓,38.15,-0.06,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+LULU,Consumer Discretionary,228.2,0,↓,38.1,0.42,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+RCL,Consumer Discretionary,271.69,0,↓,38.09,0.32,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+INCY,Health Care,68.37,0,↓,38.01,-0.0,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+BX,Financials,137.62,0,↓,37.98,-0.87,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+EXE,Energy,121.85,0,↓,37.95,-0.46,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+ANSS,Information Technology,335.58,0,↓,37.87,-0.27,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+BAC,Financials,45.44,0,↓,37.86,-0.35,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+GS,Financials,637.55,0,↓,37.82,-0.41,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+MRK,Health Care,79.44,0,↓,37.76,-0.28,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+MHK,Consumer Discretionary,99.29,0,↓,37.73,-0.39,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+WMB,Energy,59.94,0,↓,37.69,-0.93,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+TROW,Financials,92.97,0,↓,37.66,-0.54,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+COIN,Financials,302.3,0,↓,37.65,-0.39,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+TMO,Health Care,394.7,0,↓,37.61,-0.01,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+META,Communication Services,684.0,0,↓,37.53,0.46,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+WAT,Health Care,342.15,0,↓,37.53,-0.48,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+ZBRA,Information Technology,293.25,0,↓,37.5,0.18,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+DELL,Information Technology,118.94,0,↓,37.49,0.46,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+IVZ,Financials,14.85,0,↓,37.46,-0.58,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+TRGP,Energy,170.27,0,↓,37.45,-1.0,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+MRNA,Health Care,25.66,0,↓,37.45,-0.49,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+BKNG,Consumer Discretionary,5286.87,0,↓,37.42,0.23,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+HRL,Consumer Staples,30.45,0,↓,37.36,-0.23,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+AMD,Information Technology,128.33,0,↓,37.36,-0.18,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CAG,Consumer Staples,21.55,0,↓,37.35,-0.56,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+APO,Financials,134.9,0,↓,37.33,-0.77,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+SWKS,Information Technology,71.4,0,↓,37.33,0.42,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+UBER,Industrials,84.33,0,↓,37.3,0.42,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+EOG,Energy,124.18,0,↓,37.3,-0.5,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+VST,Utilities,184.17,0,↓,37.26,-0.86,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+WFC,Financials,75.29,0,↓,37.25,-0.48,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+INTC,Information Technology,21.18,0,↓,37.23,-0.35,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+ABNB,Consumer Discretionary,131.99,0,↓,37.2,-0.05,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+HAL,Energy,22.09,0,↓,37.14,-0.87,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+REGN,Health Care,509.92,0,↓,37.12,-0.59,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+AZO,Consumer Discretionary,3629.98,0,↓,37.11,-0.16,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+BEN,Financials,22.67,0,↓,37.11,-0.61,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+USB,Financials,43.22,0,↓,37.11,-0.61,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+MTD,Health Care,1149.8,0,↓,37.1,-0.77,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CHD,Consumer Staples,96.81,0,↓,37.09,-0.16,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+TER,Information Technology,85.89,0,↓,37.03,0.19,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+NWSA,Communication Services,28.25,0,↓,37.01,0.64,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+YUM,Consumer Discretionary,139.08,0,↓,37.01,-0.15,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+HOLX,Health Care,64.49,0,↓,37.0,-0.39,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+TSCO,Consumer Discretionary,52.35,0,↓,36.96,-0.1,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+TFC,Financials,40.03,0,↓,36.95,-0.54,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+APA,Energy,19.89,0,↓,36.95,-0.93,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+KMX,Consumer Discretionary,68.6,0,↓,36.95,0.12,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+LVS,Consumer Discretionary,41.46,0,↓,36.87,-0.19,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+T,Communication Services,28.0,0,↓,36.87,0.39,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+RF,Financials,22.03,0,↓,36.86,-0.55,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+EPAM,Information Technology,163.67,0,↓,36.85,0.27,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CNC,Health Care,54.72,0,↓,36.85,-0.33,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+HAS,Consumer Discretionary,68.25,0,↓,36.84,0.07,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+RVTY,Health Care,94.33,0,↓,36.83,-0.61,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+GILD,Health Care,108.96,0,↓,36.83,-0.69,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+LYV,Communication Services,148.81,0,↓,36.83,0.68,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+BRK-B,Financials,484.55,0,↓,36.82,-0.64,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+AVGO,Information Technology,247.9,0,↓,36.81,0.22,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CRL,Health Care,146.64,0,↓,36.8,-0.27,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+MET,Financials,78.68,0,↓,36.77,-0.52,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+MPWR,Information Technology,684.47,0,↓,36.75,-0.13,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+FANG,Energy,148.24,0,↓,36.74,-0.79,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+UNH,Health Care,303.33,0,↓,36.72,-0.79,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+WDC,Information Technology,59.24,0,↓,36.72,0.46,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+VZ,Communication Services,41.9,0,↓,36.71,0.45,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+PYPL,Financials,69.7,0,↓,36.71,-0.5,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CTRA,Energy,26.98,0,↓,36.7,-0.83,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CDNS,Information Technology,294.15,0,↓,36.69,-0.17,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+FOX,Communication Services,50.76,0,↓,36.69,0.34,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CVX,Energy,148.1,0,↓,36.68,-0.81,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+LLY,Health Care,764.98,0,↓,36.68,-0.51,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+PNC,Financials,177.13,0,↓,36.66,-0.56,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+QCOM,Information Technology,151.68,0,↓,36.65,-0.11,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+TMUS,Communication Services,221.88,0,↓,36.64,0.35,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+OKE,Energy,82.04,0,↓,36.64,-0.88,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+PTC,Information Technology,167.4,0,↓,36.63,-0.08,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+BIIB,Health Care,126.72,0,↓,36.61,-0.97,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+FOXA,Communication Services,55.41,0,↓,36.59,0.31,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+NTRS,Financials,111.62,0,↓,36.55,-0.55,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+COP,Energy,93.77,0,↓,36.52,-0.81,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+VTRS,Health Care,8.8,0,↓,36.5,-0.59,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+RJF,Financials,148.42,0,↓,36.46,-0.72,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+BLDR,Industrials,113.21,0,↓,36.43,0.75,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+TXN,Information Technology,197.4,0,↓,36.43,-0.18,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+HPQ,Information Technology,24.17,0,↓,36.43,-0.12,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+KR,Consumer Staples,71.4,0,↓,36.42,-0.53,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+AXP,Financials,297.2,0,↓,36.39,-0.7,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+TPL,Energy,1072.11,0,↓,36.38,-0.74,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+BALL,Materials,55.92,0,↓,36.38,-0.46,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+NXPI,Information Technology,208.47,0,↓,36.37,-0.13,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+NVDA,Information Technology,143.72,0,↓,36.36,-0.12,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+DHR,Health Care,195.81,0,↓,36.36,-0.5,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+AMGN,Health Care,290.5,0,↓,36.34,-0.59,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+HSY,Consumer Staples,173.03,0,↓,36.34,-0.09,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+INTU,Information Technology,758.9,0,↓,36.3,0.24,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+ALB,Materials,57.18,0,↓,36.28,-0.91,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+DASH,Consumer Discretionary,221.99,0,↓,36.27,-0.35,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+AMP,Financials,506.65,0,↓,36.27,-0.73,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+VTR,Real Estate,62.68,0,↓,36.26,0.62,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+KEY,Financials,16.06,0,↓,36.23,-0.76,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+DVN,Energy,33.85,0,↓,36.22,-0.82,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+MPC,Energy,168.44,0,↓,36.22,-0.87,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+PGR,Financials,260.84,0,↓,36.22,-1.18,Medium,Sell,Low confidence (36.20000076293945%) and expected return < -1%,2025-06-20 13:50:54
+MCHP,Information Technology,68.31,0,↓,36.21,-0.02,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+ADI,Information Technology,227.55,0,↓,36.18,-0.12,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+WBD,Communication Services,10.42,0,↓,36.17,0.11,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+HD,Consumer Discretionary,349.88,0,↓,36.17,-0.25,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+BXP,Real Estate,71.7,0,↓,36.16,-0.13,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+HES,Energy,143.36,0,↓,36.16,-0.83,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+ACN,Information Technology,284.07,0,↓,36.16,-0.28,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+SNPS,Information Technology,469.56,0,↓,36.15,-0.33,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+MTCH,Communication Services,30.35,0,↓,36.15,0.16,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+ARE,Real Estate,71.78,0,↓,36.13,0.44,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+KLAC,Information Technology,848.18,0,↓,36.12,-0.21,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+PSX,Energy,124.3,0,↓,36.12,-0.9,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+FITB,Financials,38.97,0,↓,36.11,-0.78,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+MO,Consumer Staples,59.51,0,↓,36.11,-0.3,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+DRI,Consumer Discretionary,221.86,0,↓,36.1,-0.69,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+NCLH,Consumer Discretionary,18.8,0,↓,36.09,-0.2,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+NEE,Utilities,72.28,0,↓,36.07,-1.12,Medium,Sell,Low confidence (36.099998474121094%) and expected return < -1%,2025-06-20 13:50:54
+OMC,Communication Services,69.56,0,↓,36.05,0.39,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+PFG,Financials,76.23,0,↓,36.01,-0.71,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+V,Financials,336.76,0,↓,35.99,-0.81,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+MSCI,Financials,544.15,0,↓,35.99,-0.75,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+DLTR,Consumer Staples,97.75,0,↓,35.96,-0.52,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+AMCR,Materials,9.02,0,↓,35.95,-1.07,Medium,Sell,Low confidence (36.0%) and expected return < -1%,2025-06-20 13:50:54
+NWS,Communication Services,32.39,0,↓,35.94,0.35,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+AES,Utilities,10.54,0,↓,35.94,-1.47,Medium,Sell,Low confidence (35.900001525878906%) and expected return < -1%,2025-06-20 13:50:54
+TRMB,Information Technology,71.31,0,↓,35.94,0.17,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+AON,Financials,353.33,0,↓,35.91,-1.21,Medium,Sell,Low confidence (35.900001525878906%) and expected return < -1%,2025-06-20 13:50:54
+AVY,Materials,175.17,0,↓,35.9,-0.7,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+WSM,Consumer Discretionary,159.45,0,↓,35.9,-0.03,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+WST,Health Care,216.65,0,↓,35.88,-1.09,Medium,Sell,Low confidence (35.900001525878906%) and expected return < -1%,2025-06-20 13:50:54
+DG,Consumer Staples,110.96,0,↓,35.87,-0.69,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+RMD,Health Care,252.55,0,↓,35.86,-1.0,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+C,Financials,78.35,0,↓,35.85,-1.04,Medium,Sell,Low confidence (35.79999923706055%) and expected return < -1%,2025-06-20 13:50:54
+HPE,Information Technology,17.87,0,↓,35.84,-0.26,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+MSFT,Information Technology,478.36,0,↓,35.83,0.08,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+FIS,Financials,80.15,0,↓,35.82,-0.83,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+A,Health Care,115.31,0,↓,35.81,-0.85,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+IPG,Communication Services,23.16,0,↓,35.81,0.28,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+KKR,Financials,122.74,0,↓,35.8,-1.21,Medium,Sell,Low confidence (35.79999923706055%) and expected return < -1%,2025-06-20 13:50:54
+WDAY,Information Technology,237.63,0,↓,35.8,-0.15,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+GL,Financials,120.01,0,↓,35.8,-0.88,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+FICO,Information Technology,1812.43,0,↓,35.8,0.06,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+BRO,Financials,108.6,0,↓,35.78,-1.22,Medium,Sell,Low confidence (35.79999923706055%) and expected return < -1%,2025-06-20 13:50:54
+SYY,Consumer Staples,74.62,0,↓,35.77,-0.62,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+EXPE,Consumer Discretionary,163.69,0,↓,35.77,0.01,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+VLO,Energy,140.51,0,↓,35.77,-0.88,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+D,Utilities,54.47,0,↓,35.77,-0.99,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+TJX,Consumer Discretionary,123.03,0,↓,35.75,-0.24,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+IBM,Information Technology,281.01,0,↓,35.74,-0.03,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+TGT,Consumer Staples,95.28,0,↓,35.71,-0.74,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+AKAM,Information Technology,77.82,0,↓,35.7,-0.2,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+TTWO,Communication Services,238.98,0,↓,35.7,0.22,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+LKQ,Consumer Discretionary,37.01,0,↓,35.69,-0.55,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+MMC,Financials,215.87,0,↓,35.69,-0.98,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+DIS,Communication Services,117.03,0,↓,35.69,0.16,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+FSLR,Information Technology,145.12,0,↓,35.69,-0.1,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+STT,Financials,99.49,0,↓,35.68,-0.84,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+AMZN,Consumer Discretionary,209.58,0,↓,35.67,-0.58,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+SJM,Consumer Staples,97.17,0,↓,35.67,-0.51,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+K,Consumer Staples,78.47,0,↓,35.67,-0.65,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+ORLY,Consumer Discretionary,88.88,0,↓,35.67,-0.47,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+MDT,Health Care,86.02,0,↓,35.66,-0.61,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+ALL,Financials,195.97,0,↓,35.66,-1.15,Medium,Sell,Low confidence (35.70000076293945%) and expected return < -1%,2025-06-20 13:50:54
+ANET,Information Technology,86.3,0,↓,35.65,-0.14,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+GPN,Financials,76.48,0,↓,35.65,-1.01,Medium,Sell,Low confidence (35.599998474121094%) and expected return < -1%,2025-06-20 13:50:54
+PLD,Real Estate,105.75,0,↓,35.64,-0.12,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+DECK,Consumer Discretionary,101.62,0,↓,35.64,-0.45,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+LOW,Consumer Discretionary,211.2,0,↓,35.64,-0.49,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+FTNT,Information Technology,99.39,0,↓,35.64,-0.15,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+NEM,Materials,58.47,0,↓,35.62,-0.86,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+JKHY,Financials,178.99,0,↓,35.59,-0.9,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+TEL,Information Technology,163.03,0,↓,35.59,-0.1,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+AJG,Financials,319.27,0,↓,35.59,-0.92,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+APH,Information Technology,93.4,0,↓,35.59,0.22,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+TKO,Communication Services,174.32,0,↓,35.58,0.11,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+VMC,Materials,254.88,0,↓,35.57,-0.99,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+ACGL,Financials,89.87,0,↓,35.55,-0.95,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+MS,Financials,132.06,0,↓,35.54,-1.08,Medium,Sell,Low confidence (35.5%) and expected return < -1%,2025-06-20 13:50:54
+ON,Information Technology,52.57,0,↓,35.54,-0.13,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+ICE,Financials,179.18,0,↓,35.53,-0.93,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+L,Financials,88.46,0,↓,35.53,-1.11,Medium,Sell,Low confidence (35.5%) and expected return < -1%,2025-06-20 13:50:54
+SPGI,Financials,502.58,0,↓,35.51,-0.95,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+ABT,Health Care,132.65,0,↓,35.51,-0.84,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CBOE,Financials,227.71,0,↓,35.51,-0.95,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+WMT,Consumer Staples,95.98,0,↓,35.49,-0.45,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+SW,Materials,42.85,0,↓,35.49,-1.04,Medium,Sell,Low confidence (35.5%) and expected return < -1%,2025-06-20 13:50:54
+PANW,Information Technology,198.38,0,↓,35.48,-0.06,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+UPS,Industrials,99.3,0,↓,35.47,-0.22,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+MOH,Health Care,293.18,0,↓,35.47,-0.76,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+SMCI,Information Technology,44.38,0,↓,35.47,-0.06,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+MSI,Information Technology,405.59,0,↓,35.46,-0.08,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CFG,Financials,41.4,0,↓,35.45,-0.95,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+SCHW,Financials,89.68,0,↓,35.45,-0.91,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+JPM,Financials,273.95,0,↓,35.45,-0.96,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CPAY,Financials,316.3,0,↓,35.45,-0.99,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+MMM,Industrials,142.63,0,↓,35.45,0.55,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+NTAP,Information Technology,102.23,0,↓,35.44,-0.29,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+JNPR,Information Technology,35.99,0,↓,35.44,-0.16,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+POOL,Consumer Discretionary,286.25,0,↓,35.43,-0.68,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+SO,Utilities,89.35,0,↓,35.43,-1.5,Medium,Sell,Low confidence (35.400001525878906%) and expected return < -1%,2025-06-20 13:50:54
+WRB,Financials,72.93,0,↓,35.42,-1.01,Medium,Sell,Low confidence (35.400001525878906%) and expected return < -1%,2025-06-20 13:50:54
+F,Consumer Discretionary,10.5,0,↓,35.41,-0.28,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+JNJ,Health Care,149.49,0,↓,35.41,-0.61,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+TYL,Information Technology,569.82,0,↓,35.4,-0.02,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+DUK,Utilities,115.5,0,↓,35.39,-1.4,Medium,Sell,Low confidence (35.400001525878906%) and expected return < -1%,2025-06-20 13:50:54
+FI,Financials,163.0,0,↓,35.39,-0.91,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+DD,Materials,66.48,0,↓,35.39,-0.85,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+BK,Financials,91.67,0,↓,35.38,-0.91,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+AIG,Financials,84.52,0,↓,35.38,-0.89,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+FDS,Financials,421.25,0,↓,35.37,-0.9,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+ROP,Information Technology,560.02,0,↓,35.37,-0.0,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+ES,Utilities,62.81,0,↓,35.37,-1.21,Medium,Sell,Low confidence (35.400001525878906%) and expected return < -1%,2025-06-20 13:50:54
+MCO,Financials,469.23,0,↓,35.37,-0.97,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+IFF,Materials,73.99,0,↓,35.35,-1.12,Medium,Sell,Low confidence (35.400001525878906%) and expected return < -1%,2025-06-20 13:50:54
+SBUX,Consumer Discretionary,92.92,0,↓,35.34,-0.53,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+TRV,Financials,265.43,0,↓,35.34,-1.08,Medium,Sell,Low confidence (35.29999923706055%) and expected return < -1%,2025-06-20 13:50:54
+VRSN,Information Technology,279.07,0,↓,35.34,-0.03,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+GEN,Information Technology,29.01,0,↓,35.34,-0.13,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+DTE,Utilities,132.38,0,↓,35.33,-1.48,Medium,Sell,Low confidence (35.29999923706055%) and expected return < -1%,2025-06-20 13:50:54
+BLK,Financials,973.91,0,↓,35.33,-1.02,Medium,Sell,Low confidence (35.29999923706055%) and expected return < -1%,2025-06-20 13:50:54
+HIG,Financials,125.35,0,↓,35.31,-1.02,Medium,Sell,Low confidence (35.29999923706055%) and expected return < -1%,2025-06-20 13:50:54
+CB,Financials,283.25,0,↓,35.28,-1.15,Medium,Sell,Low confidence (35.29999923706055%) and expected return < -1%,2025-06-20 13:50:54
+AFL,Financials,102.63,0,↓,35.28,-0.95,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CLX,Consumer Staples,121.22,0,↓,35.27,-0.53,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+GDDY,Information Technology,174.8,0,↓,35.27,-0.09,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+MKTX,Financials,218.84,0,↓,35.26,-0.87,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+MTB,Financials,183.14,0,↓,35.26,-1.03,Medium,Sell,Low confidence (35.29999923706055%) and expected return < -1%,2025-06-20 13:50:54
+STX,Information Technology,130.76,0,↓,35.25,-0.09,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CMS,Utilities,69.26,0,↓,35.23,-1.46,Medium,Sell,Low confidence (35.20000076293945%) and expected return < -1%,2025-06-20 13:50:54
+CRWD,Information Technology,480.2,0,↓,35.22,-0.17,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+WTW,Financials,298.46,0,↓,35.22,-0.9,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+AIZ,Financials,195.64,0,↓,35.21,-0.88,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+TPR,Consumer Discretionary,84.1,0,↓,35.2,-0.4,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+EXR,Real Estate,146.17,0,↓,35.2,-0.03,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CME,Financials,269.81,0,↓,35.2,-0.94,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+APTV,Consumer Discretionary,66.5,0,↓,35.2,-0.56,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+GLW,Information Technology,50.1,0,↓,35.2,-0.12,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+DLR,Real Estate,176.09,0,↓,35.18,0.03,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CEG,Utilities,304.9,0,↓,35.16,-1.14,Medium,Sell,Low confidence (35.20000076293945%) and expected return < -1%,2025-06-20 13:50:54
+VICI,Real Estate,32.46,0,↓,35.15,0.31,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CINF,Financials,145.4,0,↓,35.15,-1.02,Medium,Sell,Low confidence (35.099998474121094%) and expected return < -1%,2025-06-20 13:50:54
+ADSK,Information Technology,295.7,0,↓,35.15,-0.09,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+GIS,Consumer Staples,53.01,0,↓,35.15,-0.68,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+KIM,Real Estate,20.92,0,↓,35.14,0.05,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+NOW,Information Technology,972.59,0,↓,35.14,-0.14,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+TDG,Industrials,1431.52,0,↓,35.12,0.05,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+SPG,Real Estate,157.5,0,↓,35.12,0.14,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+FRT,Real Estate,95.79,0,↓,35.12,0.09,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+NDAQ,Financials,86.36,0,↓,35.12,-0.98,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+ENPH,Information Technology,35.92,0,↓,35.11,-0.13,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+BSX,Health Care,101.57,0,↓,35.1,-1.08,Medium,Sell,Low confidence (35.099998474121094%) and expected return < -1%,2025-06-20 13:50:54
+VRTX,Health Care,439.49,0,↓,35.08,-0.59,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+EIX,Utilities,50.17,0,↓,35.07,-1.64,Medium,Sell,Low confidence (35.099998474121094%) and expected return < -1%,2025-06-20 13:50:54
+STLD,Materials,124.89,0,↓,35.07,-1.07,Medium,Sell,Low confidence (35.099998474121094%) and expected return < -1%,2025-06-20 13:50:54
+KHC,Consumer Staples,25.82,0,↓,35.07,-0.86,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+MA,Financials,532.56,0,↓,35.06,-0.98,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CDW,Information Technology,169.69,0,↓,35.06,-0.11,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CRM,Information Technology,259.38,0,↓,35.06,-0.09,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+IRM,Real Estate,101.14,0,↓,35.06,-0.02,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+WY,Real Estate,26.23,0,↓,35.05,0.5,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+LW,Consumer Staples,53.15,0,↓,35.05,-0.47,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+WELL,Real Estate,152.93,0,↓,35.05,0.09,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+EG,Financials,334.4,0,↓,35.04,-1.0,Medium,Sell,Low confidence (35.0%) and expected return < -1%,2025-06-20 13:50:54
+EQR,Real Estate,68.81,0,↓,35.03,0.03,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+MAR,Consumer Discretionary,258.14,0,↓,35.03,-0.53,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+MCD,Consumer Discretionary,286.55,0,↓,35.03,-0.47,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+BAX,Health Care,30.0,0,↓,35.03,-0.96,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+KEYS,Information Technology,158.33,0,↓,35.02,-0.18,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+ADBE,Information Technology,375.49,0,↓,35.02,-0.13,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+ORCL,Information Technology,207.33,0,↓,35.01,-0.11,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+IP,Materials,45.99,0,↓,35.01,-0.89,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+BBY,Consumer Discretionary,67.12,0,↓,35.0,-0.6,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+TSN,Consumer Staples,54.51,0,↓,35.0,-0.71,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+MLM,Materials,536.89,0,↓,34.99,-0.93,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+SYK,Health Care,374.83,0,↓,34.98,-1.13,Medium,Sell,Low confidence (35.0%) and expected return < -1%,2025-06-20 13:50:54
+REG,Real Estate,71.07,0,↓,34.98,0.12,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+SWK,Industrials,64.71,0,↓,34.97,0.15,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+PRU,Financials,104.17,0,↓,34.96,-1.08,Medium,Sell,Low confidence (35.0%) and expected return < -1%,2025-06-20 13:50:54
+IDXX,Health Care,519.18,0,↓,34.96,-1.07,Medium,Sell,Low confidence (35.0%) and expected return < -1%,2025-06-20 13:50:54
+MDLZ,Consumer Staples,68.41,0,↓,34.94,-0.81,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+ED,Utilities,101.2,0,↓,34.93,-1.25,Medium,Sell,Low confidence (34.900001525878906%) and expected return < -1%,2025-06-20 13:50:54
+CTSH,Information Technology,76.29,0,↓,34.93,-0.08,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+PPL,Utilities,33.81,0,↓,34.92,-1.38,Medium,Sell,Low confidence (34.900001525878906%) and expected return < -1%,2025-06-20 13:50:54
+CSCO,Information Technology,65.81,0,↓,34.9,-0.18,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+STZ,Consumer Staples,160.42,0,↓,34.9,-0.69,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+HLT,Consumer Discretionary,246.88,0,↓,34.9,-0.59,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+O,Real Estate,57.53,0,↓,34.9,0.17,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+MKC,Consumer Staples,73.22,0,↓,34.9,-1.29,Medium,Sell,Low confidence (34.900001525878906%) and expected return < -1%,2025-06-20 13:50:54
+TDY,Information Technology,486.71,0,↓,34.89,-0.17,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+AEE,Utilities,94.96,0,↓,34.89,-1.35,Medium,Sell,Low confidence (34.900001525878906%) and expected return < -1%,2025-06-20 13:50:54
+EL,Consumer Staples,74.57,0,↓,34.88,-0.93,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+ETN,Industrials,332.1,0,↓,34.88,0.19,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+IT,Information Technology,391.13,0,↓,34.87,-0.14,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CVS,Health Care,67.01,0,↓,34.87,-0.91,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+FE,Utilities,39.85,0,↓,34.87,-1.55,Medium,Sell,Low confidence (34.900001525878906%) and expected return < -1%,2025-06-20 13:50:54
+ETR,Utilities,81.37,0,↓,34.87,-1.46,Medium,Sell,Low confidence (34.900001525878906%) and expected return < -1%,2025-06-20 13:50:54
+FCX,Materials,40.31,0,↓,34.86,-1.07,Medium,Sell,Low confidence (34.900001525878906%) and expected return < -1%,2025-06-20 13:50:54
+BMY,Health Care,46.85,0,↓,34.84,-1.21,Medium,Sell,Low confidence (34.79999923706055%) and expected return < -1%,2025-06-20 13:50:54
+PEG,Utilities,81.98,0,↓,34.84,-1.29,Medium,Sell,Low confidence (34.79999923706055%) and expected return < -1%,2025-06-20 13:50:54
+DPZ,Consumer Discretionary,448.17,0,↓,34.84,-0.5,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+GRMN,Consumer Discretionary,199.17,0,↓,34.84,-0.43,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+FFIV,Information Technology,285.3,0,↓,34.84,-0.1,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CNP,Utilities,35.76,0,↓,34.84,-1.43,Medium,Sell,Low confidence (34.79999923706055%) and expected return < -1%,2025-06-20 13:50:54
+COO,Health Care,70.24,0,↓,34.83,-0.81,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+AEP,Utilities,101.79,0,↓,34.82,-1.27,Medium,Sell,Low confidence (34.79999923706055%) and expected return < -1%,2025-06-20 13:50:54
+NOC,Industrials,496.16,0,↓,34.82,-0.01,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+BDX,Health Care,168.84,0,↓,34.81,-0.91,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+JBL,Information Technology,204.11,0,↓,34.81,-0.17,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+PLTR,Information Technology,137.55,0,↓,34.8,-0.16,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+LYB,Materials,58.33,0,↓,34.8,-0.81,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+INVH,Real Estate,33.74,0,↓,34.79,-0.02,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+DXCM,Health Care,79.96,0,↓,34.78,-1.01,Medium,Sell,Low confidence (34.79999923706055%) and expected return < -1%,2025-06-20 13:50:54
+CPB,Consumer Staples,31.86,0,↓,34.78,-0.7,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+HBAN,Financials,15.77,0,↓,34.77,-1.08,Medium,Sell,Low confidence (34.79999923706055%) and expected return < -1%,2025-06-20 13:50:54
+EBAY,Consumer Discretionary,77.21,0,↓,34.77,-0.37,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+PNW,Utilities,88.81,0,↓,34.76,-1.5,Medium,Sell,Low confidence (34.79999923706055%) and expected return < -1%,2025-06-20 13:50:54
+ROST,Consumer Discretionary,128.05,0,↓,34.76,-0.48,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+SHW,Materials,331.48,0,↓,34.75,-0.82,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+NI,Utilities,39.43,0,↓,34.75,-1.49,Medium,Sell,Low confidence (34.79999923706055%) and expected return < -1%,2025-06-20 13:50:54
+AVB,Real Estate,206.82,0,↓,34.74,0.09,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+LH,Health Care,261.63,0,↓,34.74,-1.03,Medium,Sell,Low confidence (34.70000076293945%) and expected return < -1%,2025-06-20 13:50:54
+LNT,Utilities,60.53,0,↓,34.73,-1.37,Medium,Sell,Low confidence (34.70000076293945%) and expected return < -1%,2025-06-20 13:50:54
+HUM,Health Care,240.85,0,↓,34.71,-1.21,Medium,Sell,Low confidence (34.70000076293945%) and expected return < -1%,2025-06-20 13:50:54
+ATO,Utilities,152.93,0,↓,34.68,-1.22,Medium,Sell,Low confidence (34.70000076293945%) and expected return < -1%,2025-06-20 13:50:54
+AWK,Utilities,140.85,0,↓,34.68,-1.32,Medium,Sell,Low confidence (34.70000076293945%) and expected return < -1%,2025-06-20 13:50:54
+AXON,Industrials,777.16,0,↓,34.68,-0.12,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+PODD,Health Care,300.8,0,↓,34.68,-1.01,Medium,Sell,Low confidence (34.70000076293945%) and expected return < -1%,2025-06-20 13:50:54
+SRE,Utilities,74.66,0,↓,34.68,-1.41,Medium,Sell,Low confidence (34.70000076293945%) and expected return < -1%,2025-06-20 13:50:54
+UDR,Real Estate,41.09,0,↓,34.67,0.08,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+PSA,Real Estate,289.61,0,↓,34.67,0.09,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+RL,Consumer Discretionary,261.96,0,↓,34.66,-0.55,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CZR,Consumer Discretionary,27.91,0,↓,34.64,-0.41,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+PG,Consumer Staples,158.69,0,↓,34.64,-0.74,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+LIN,Materials,455.8,0,↓,34.63,-0.93,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CTVA,Materials,73.12,0,↓,34.62,-0.97,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+RTX,Industrials,147.07,0,↓,34.62,-0.22,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CL,Consumer Staples,88.21,0,↓,34.62,-0.52,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+NUE,Materials,123.84,0,↓,34.62,-1.03,Medium,Sell,Low confidence (34.599998474121094%) and expected return < -1%,2025-06-20 13:50:54
+MGM,Consumer Discretionary,33.53,0,↓,34.62,-0.55,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+KO,Consumer Staples,69.41,0,↓,34.62,-0.91,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+WEC,Utilities,104.13,0,↓,34.61,-1.42,Medium,Sell,Low confidence (34.599998474121094%) and expected return < -1%,2025-06-20 13:50:54
+ESS,Real Estate,284.73,0,↓,34.61,0.11,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+IQV,Health Care,154.1,0,↓,34.61,-1.04,Medium,Sell,Low confidence (34.599998474121094%) and expected return < -1%,2025-06-20 13:50:54
+EMN,Materials,74.17,0,↓,34.6,-0.98,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CMI,Industrials,314.69,0,↓,34.59,-0.49,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+PPG,Materials,108.23,0,↓,34.59,-0.96,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+PKG,Materials,186.96,0,↓,34.58,-0.94,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+EXC,Utilities,42.6,0,↓,34.57,-1.5,Medium,Sell,Low confidence (34.599998474121094%) and expected return < -1%,2025-06-20 13:50:54
+ZTS,Health Care,156.52,0,↓,34.55,-0.87,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+PCG,Utilities,13.89,0,↓,34.55,-1.38,Medium,Sell,Low confidence (34.5%) and expected return < -1%,2025-06-20 13:50:54
+AME,Industrials,176.62,0,↓,34.55,-0.42,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CF,Materials,99.02,0,↓,34.52,-0.82,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+TECH,Health Care,49.92,0,↓,34.52,-1.05,Medium,Sell,Low confidence (34.5%) and expected return < -1%,2025-06-20 13:50:54
+CI,Health Care,313.38,0,↓,34.51,-0.91,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+DOW,Materials,27.85,0,↓,34.51,-1.0,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+ALGN,Health Care,181.01,0,↓,34.51,-0.91,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+ISRG,Health Care,510.64,0,↓,34.51,-0.92,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+ULTA,Consumer Discretionary,470.36,0,↓,34.51,-0.53,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+GPC,Consumer Discretionary,118.58,0,↓,34.5,-0.43,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+ZBH,Health Care,90.82,0,↓,34.5,-1.1,Medium,Sell,Low confidence (34.5%) and expected return < -1%,2025-06-20 13:50:54
+GM,Consumer Discretionary,47.84,0,↓,34.5,-0.48,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+ELV,Health Care,372.44,0,↓,34.49,-1.06,Medium,Sell,Low confidence (34.5%) and expected return < -1%,2025-06-20 13:50:54
+ABBV,Health Care,184.69,0,↓,34.49,-0.98,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+MAA,Real Estate,148.27,0,↓,34.48,0.04,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+DGX,Health Care,179.71,0,↓,34.48,-1.06,Medium,Sell,Low confidence (34.5%) and expected return < -1%,2025-06-20 13:50:54
+HST,Real Estate,15.62,0,↓,34.47,-0.27,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+XEL,Utilities,66.54,0,↓,34.46,-1.46,Medium,Sell,Low confidence (34.5%) and expected return < -1%,2025-06-20 13:50:54
+ECL,Materials,259.46,0,↓,34.46,-0.91,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+PM,Consumer Staples,182.66,0,↓,34.45,-0.87,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+STE,Health Care,234.89,0,↓,34.43,-0.95,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+APD,Materials,271.56,0,↓,34.43,-0.97,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+WBA,Consumer Staples,11.35,0,↓,34.41,-1.07,Medium,Sell,Low confidence (34.400001525878906%) and expected return < -1%,2025-06-20 13:50:54
+EVRG,Utilities,67.15,0,↓,34.41,-1.46,Medium,Sell,Low confidence (34.400001525878906%) and expected return < -1%,2025-06-20 13:50:54
+FAST,Industrials,40.94,0,↓,34.39,-0.43,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+SOLV,Health Care,72.87,0,↓,34.39,-0.98,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CBRE,Real Estate,133.44,0,↓,34.39,-0.04,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CSGP,Real Estate,79.81,0,↓,34.38,0.02,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+NRG,Utilities,151.72,0,↓,34.38,-1.39,Medium,Sell,Low confidence (34.400001525878906%) and expected return < -1%,2025-06-20 13:50:54
+HCA,Health Care,375.01,0,↓,34.35,-1.06,Medium,Sell,Low confidence (34.29999923706055%) and expected return < -1%,2025-06-20 13:50:54
+CAT,Industrials,359.48,0,↓,34.35,-0.3,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+DOC,Real Estate,17.17,0,↓,34.33,0.2,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+FDX,Industrials,225.11,0,↓,34.33,-0.33,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+SBAC,Real Estate,228.41,0,↓,34.33,0.1,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+IEX,Industrials,173.56,0,↓,34.32,-0.47,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+EQIX,Real Estate,884.98,0,↓,34.31,-0.04,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CCL,Consumer Discretionary,23.66,0,↓,34.28,-0.45,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+GE,Industrials,238.09,0,↓,34.25,-0.17,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+GEHC,Health Care,71.35,0,↓,34.24,-1.18,Medium,Sell,Low confidence (34.20000076293945%) and expected return < -1%,2025-06-20 13:50:54
+MOS,Materials,36.0,0,↓,34.24,-0.99,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CPT,Real Estate,115.6,0,↓,34.23,0.11,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+MCK,Health Care,722.56,0,↓,34.22,-1.12,Medium,Sell,Low confidence (34.20000076293945%) and expected return < -1%,2025-06-20 13:50:54
+UHS,Health Care,171.81,0,↓,34.21,-1.14,Medium,Sell,Low confidence (34.20000076293945%) and expected return < -1%,2025-06-20 13:50:54
+GEV,Industrials,484.6,0,↓,34.2,-0.19,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+URI,Industrials,702.6,0,↓,34.2,-0.29,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+AMT,Real Estate,216.87,0,↓,34.2,-0.15,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+IR,Industrials,80.26,0,↓,34.17,-0.35,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+HSIC,Health Care,71.36,0,↓,34.14,-1.1,Medium,Sell,Low confidence (34.099998474121094%) and expected return < -1%,2025-06-20 13:50:54
+PEP,Consumer Staples,129.91,0,↓,34.13,-0.72,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+UNP,Industrials,221.24,0,↓,34.12,-0.3,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+NDSN,Industrials,210.96,0,↓,34.11,-0.52,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+COR,Health Care,293.57,0,↓,34.11,-1.19,Medium,Sell,Low confidence (34.099998474121094%) and expected return < -1%,2025-06-20 13:50:54
+ROL,Industrials,56.19,0,↓,34.1,-0.39,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+EW,Health Care,73.6,0,↓,34.07,-1.09,Medium,Sell,Low confidence (34.099998474121094%) and expected return < -1%,2025-06-20 13:50:54
+LDOS,Industrials,147.0,0,↓,34.05,-0.26,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+DVA,Health Care,135.45,0,↓,34.01,-1.12,Medium,Sell,Low confidence (34.0%) and expected return < -1%,2025-06-20 13:50:54
+SNA,Industrials,305.25,0,↓,34.01,-0.24,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+ODFL,Industrials,155.76,0,↓,33.97,-0.36,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+LII,Industrials,551.06,0,↓,33.95,-0.52,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+PCAR,Industrials,90.55,0,↓,33.95,-0.34,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+DOV,Industrials,174.96,0,↓,33.94,-0.4,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+GWW,Industrials,1032.04,0,↓,33.93,-0.54,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+DAY,Industrials,56.29,0,↓,33.92,-0.29,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+JBHT,Industrials,139.17,0,↓,33.89,-0.38,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+ITW,Industrials,240.06,0,↓,33.89,-0.41,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CAH,Health Care,163.54,0,↓,33.88,-1.23,Medium,Sell,Low confidence (33.900001525878906%) and expected return < -1%,2025-06-20 13:50:54
+LMT,Industrials,468.93,0,↓,33.88,-0.44,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CCI,Real Estate,99.71,0,↓,33.86,-0.25,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+EFX,Industrials,255.41,0,↓,33.85,-0.29,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+BF-B,Consumer Staples,25.76,0,↓,33.81,-0.82,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+KVUE,Consumer Staples,21.52,0,↓,33.8,-1.11,Medium,Sell,Low confidence (33.79999923706055%) and expected return < -1%,2025-06-20 13:50:54
+ADP,Industrials,305.24,0,↓,33.79,-0.33,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+NSC,Industrials,252.49,0,↓,33.78,-0.45,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+PH,Industrials,650.91,0,↓,33.78,-0.4,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CPRT,Industrials,48.17,0,↓,33.77,-0.29,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+VLTO,Industrials,96.68,0,↓,33.75,-0.29,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+KMB,Consumer Staples,128.34,0,↓,33.74,-0.99,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+KDP,Consumer Staples,33.6,0,↓,33.69,-1.28,Medium,Sell,Low confidence (33.70000076293945%) and expected return < -1%,2025-06-20 13:50:54
+LHX,Industrials,249.05,0,↓,33.68,-0.43,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CSX,Industrials,31.85,0,↓,33.67,-0.5,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+RSG,Industrials,248.4,0,↓,33.67,-0.36,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+DE,Industrials,520.0,0,↓,33.66,-0.51,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+PAYC,Industrials,230.27,0,↓,33.66,-0.37,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+GD,Industrials,277.34,0,↓,33.66,-0.42,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+BA,Industrials,198.8,0,↓,33.65,-0.44,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+XYL,Industrials,124.62,0,↓,33.65,-0.41,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+J,Industrials,126.54,0,↓,33.65,-0.51,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+PAYX,Industrials,149.16,0,↓,33.64,-0.37,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+FTV,Industrials,69.43,0,↓,33.64,-0.46,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+DAL,Industrials,47.14,0,↓,33.63,-0.44,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+MAS,Industrials,61.19,0,↓,33.63,-0.41,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+VRSK,Industrials,303.99,0,↓,33.62,-0.36,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+PNR,Industrials,96.8,0,↓,33.6,-0.51,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+TT,Industrials,419.44,0,↓,33.6,-0.47,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+WM,Industrials,232.63,0,↓,33.6,-0.35,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CHRW,Industrials,93.09,0,↓,33.59,-0.52,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+BR,Industrials,236.17,0,↓,33.59,-0.37,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+ALLE,Industrials,136.78,0,↓,33.58,-0.43,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+AOS,Industrials,62.29,0,↓,33.58,-0.55,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+EXPD,Industrials,113.09,0,↓,33.58,-0.5,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+TXT,Industrials,76.45,0,↓,33.57,-0.47,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CTAS,Industrials,218.84,0,↓,33.56,-0.42,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+UAL,Industrials,73.84,0,↓,33.55,-0.51,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+JCI,Industrials,101.91,0,↓,33.54,-0.54,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+CARR,Industrials,70.01,0,↓,33.54,-0.55,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+PWR,Industrials,360.16,0,↓,33.54,-0.41,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+HWM,Industrials,172.22,0,↓,33.53,-0.47,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+HII,Industrials,233.22,0,↓,33.53,-0.43,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+GNRC,Industrials,126.13,0,↓,33.51,-0.5,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+LUV,Industrials,31.17,0,↓,33.5,-0.41,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+HUBB,Industrials,396.64,0,↓,33.5,-0.51,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+HON,Industrials,220.45,0,↓,33.45,-0.55,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+ADM,Consumer Staples,53.47,0,↓,33.43,-1.09,Medium,Sell,Low confidence (33.400001525878906%) and expected return < -1%,2025-06-20 13:50:54
+WAB,Industrials,199.12,0,↓,33.4,-0.52,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+ROK,Industrials,319.11,0,↓,33.39,-0.56,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+OTIS,Industrials,94.87,0,↓,33.36,-0.63,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+EMR,Industrials,128.03,0,↓,33.28,-0.65,Medium,Hold,Neutral outlook: return not strong or confidence moderate,2025-06-20 13:50:54
+MNST,Consumer Staples,63.1,0,↓,33.21,-1.02,Medium,Sell,Low confidence (33.20000076293945%) and expected return < -1%,2025-06-20 13:50:54
+COST,Consumer Staples,977.51,0,↓,33.18,-1.0,Medium,Sell,Low confidence (33.20000076293945%) and expected return < -1%,2025-06-20 13:50:54
+TAP,Consumer Staples,47.93,0,↓,33.02,-1.17,Medium,Sell,Low confidence (33.0%) and expected return < -1%,2025-06-20 13:50:54
+BG,Consumer Staples,85.36,0,↓,32.9,-1.2,Medium,Sell,Low confidence (32.900001525878906%) and expected return < -1%,2025-06-20 13:50:54

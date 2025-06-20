@@ -4,43 +4,39 @@ import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
 import os
+import time
 import nltk
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-# Download the VADER lexicon for sentiment analysis
-nltk.download('vader_lexicon')
+# Download sentiment model (runs once)
+nltk.download("vader_lexicon", quiet=True)
 analyzer = SentimentIntensityAnalyzer()
 
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 DATA_FILE = "data/sp500_data.csv"
+BATCH_SIZE = 20
+SLEEP_SECONDS = 2
 
 def get_sp500_tickers():
-    """
-    Scrapes the S&P 500 ticker symbols from Wikipedia.
-    """
     try:
         tables = pd.read_html("https://en.wikipedia.org/wiki/List_of_S%26P_500_companies")
         tickers = tables[0]['Symbol'].tolist()
-        return tickers
+        # Fix problematic tickers like BRK.B → BRK-B
+        return [t.replace(".", "-") for t in tickers]
     except Exception as e:
-        print(f"❌ Error fetching S&P 500 tickers: {e}")
+        print(f"❌ Error fetching tickers: {e}")
         return []
 
 def get_sentiment(ticker):
-    """
-    Scrapes news headlines related to a ticker and calculates the average sentiment.
-    """
     try:
         url = f"https://news.google.com/search?q={ticker}%20stock"
         res = requests.get(url, headers=HEADERS, timeout=8)
         soup = BeautifulSoup(res.text, "html.parser")
         headlines = soup.find_all("a", class_="DY5T1d", limit=3)
-        scores = [analyzer.polarity_scores(headline.text)['compound'] for headline in headlines if headline.text]
-        avg_score = sum(scores) / len(scores) if scores else 0
-        return ticker, avg_score
-    except Exception as e:
-        print(f"⚠️ Error getting sentiment for {ticker}: {e}")
+        scores = [analyzer.polarity_scores(h.text)['compound'] for h in headlines if h.text]
+        return ticker, sum(scores) / len(scores) if scores else 0
+    except Exception:
         return ticker, 0
 
 def collect_data():
@@ -50,48 +46,68 @@ def collect_data():
         return
 
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    
-    # Get sector mapping from Wikipedia's S&P 500 companies table
+
+    # Sector mapping
     try:
-        sector_table = pd.read_html("https://en.wikipedia.org/wiki/List_of_S%26P_500_companies")[0]
-        sector_map = dict(zip(sector_table["Symbol"], sector_table["GICS Sector"]))
-    except Exception as e:
-        print(f"⚠️ Could not fetch sector mapping: {e}")
+        table = pd.read_html("https://en.wikipedia.org/wiki/List_of_S%26P_500_companies")[0]
+        sector_map = dict(zip(table["Symbol"].str.replace(".", "-"), table["GICS Sector"]))
+    except Exception:
         sector_map = {}
 
-    # Parallel sentiment scraping using ThreadPoolExecutor
+    # Sentiment scores in parallel
     sentiments = {}
     with ThreadPoolExecutor(max_workers=30) as executor:
-        future_to_ticker = {executor.submit(get_sentiment, t): t for t in tickers}
-        for future in as_completed(future_to_ticker):
-            t = future_to_ticker[future]
-            try:
-                ticker, score = future.result()
-                sentiments[ticker] = score
-            except Exception as e:
-                print(f"⚠️ Error processing sentiment for {t}: {e}")
-                sentiments[t] = 0
+        future_map = {executor.submit(get_sentiment, t): t for t in tickers}
+        for future in as_completed(future_map):
+            t, score = future.result()
+            sentiments[t] = score
 
-    # Collect stock prices, sentiments, and sector data for each ticker
     rows = []
-    for ticker in tickers:
+    for i in range(0, len(tickers), BATCH_SIZE):
+        batch = tickers[i:i+BATCH_SIZE]
+        print(f"📦 Fetching price data for batch {i//BATCH_SIZE + 1}")
         try:
-            info = yf.Ticker(ticker).info
-            price = info.get("regularMarketPrice")
-            if price is None:
+            df_batch = yf.download(
+                batch, period="1d", interval="1m",
+                progress=False, group_by="ticker", threads=True
+            )
+            if df_batch.empty:
+                print(f"⚠️ Batch {i//BATCH_SIZE + 1} returned no data.")
                 continue
-            sentiment = sentiments.get(ticker, 0)
-            sector = sector_map.get(ticker, "Unknown")
-            rows.append({
-                "Ticker": ticker,
-                "Price": price,
-                "Sentiment": sentiment,
-                "Sector": sector,
-                "Timestamp": now
-            })
         except Exception as e:
-            print(f"⚠️ Error collecting data for {ticker}: {e}")
+            print(f"⚠️ Error fetching batch {i//BATCH_SIZE + 1}: {e}")
+            time.sleep(5)
             continue
+
+        for t in batch:
+            try:
+                # Check if multi-indexed (multi-ticker) or flat (single-ticker)
+                if isinstance(df_batch.columns, pd.MultiIndex):
+                    if t in df_batch.columns.get_level_values(0):
+                        series = df_batch[t]["Close"].dropna()
+                    else:
+                        continue
+                else:
+                    series = df_batch["Close"].dropna()
+
+                if series.empty:
+                    continue
+
+                latest_price = series.iloc[-1]
+                sentiment = sentiments.get(t, 0)
+                sector = sector_map.get(t, "Unknown")
+                rows.append({
+                    "Ticker": t,
+                    "Price": round(latest_price, 2),
+                    "Sentiment": round(sentiment, 3),
+                    "Sector": sector,
+                    "Timestamp": now
+                })
+            except Exception as e:
+                print(f"⚠️ Skipping {t}: {e}")
+                continue
+
+        time.sleep(SLEEP_SECONDS)
 
     if not rows:
         print("⚠️ No data collected.")
@@ -99,10 +115,9 @@ def collect_data():
 
     df = pd.DataFrame(rows)
     os.makedirs("data", exist_ok=True)
-    # Append to file if it exists; otherwise, write header.
     write_header = not os.path.exists(DATA_FILE)
-    df.to_csv(DATA_FILE, mode='a', header=write_header, index=False)
-    print(f"✅ Collected data for {len(df)} S&P 500 stocks at {now}")
+    df.to_csv(DATA_FILE, mode="a", header=write_header, index=False)
+    print(f"✅ Collected {len(df)} records at {now}")
 
 if __name__ == "__main__":
     collect_data()

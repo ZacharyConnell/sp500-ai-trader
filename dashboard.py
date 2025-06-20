@@ -180,11 +180,14 @@ with tabs[0]:
 
 # ---------- Tab 1: Market View ----------
 with tabs[1]:
+    import os
+    import pandas as pd
+
     PRED_FILE = "data/predictions_today.csv"
     st.subheader("📈 S&P 500 Signals Overview")
 
-    if not os.path.exists(PRED_FILE):
-        st.warning("No predictions found. Run predict_all.py first.")
+    if not os.path.exists(PRED_FILE) or os.path.getsize(PRED_FILE) == 0:
+        st.warning("📭 No predictions found. Please run `predict_all.py` using the button in the Overview tab.")
     else:
         df = pd.read_csv(PRED_FILE)
 

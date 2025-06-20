@@ -8,9 +8,10 @@ from tensorflow.keras.utils import to_categorical
 from datetime import datetime
 import json
 import os
+from tensorflow.keras.losses import MeanSquaredError
 
 DATA_FILE = "data/sp500_data.csv"
-MODEL_FILE = "models/lstm_model.h5"
+MODEL_FILE = "models/lstm_model.keras"
 METRICS_FILE = "models/metrics.json"
 
 def rsi(series, period=14):
@@ -49,10 +50,20 @@ def load_data():
     if not os.path.exists(DATA_FILE):
         print("❌ Data file not found.")
         return None
+
     df = pd.read_csv(DATA_FILE)
+    df['Price'] = pd.to_numeric(df['Price'], errors='coerce')
+
+    print("🔍 Raw data:", df.shape)
+
+    # Ensure required columns exist
+    if 'Sentiment' not in df.columns:
+        print("⚠️ 'Sentiment' column missing from data.")
+        return None
+
     df = compute_indicators(df)
-    df = df.dropna()
-    
+    print("📉 After indicators:", df.shape)
+
     # Create target variables
     df['Target_Class'] = (df.groupby('Ticker')['Price'].diff().shift(-1) > 0).astype(int)
     df['Target_Return'] = df.groupby('Ticker')['Price'].pct_change().shift(-1)
@@ -62,54 +73,82 @@ def load_data():
     q_low = df['Volatility'].quantile(0.33)
     q_high = df['Volatility'].quantile(0.66)
     df['Target_Vol'] = df['Volatility'].apply(lambda x: classify_volatility(x, (q_low, q_high)))
-    df = df.dropna()
+
+    # Drop only rows that are missing critical targets—not all indicators
+    target_cols = ['Target_Class', 'Target_Return', 'Target_Vol']
+    df = df.dropna(subset=target_cols)
+
+    print("🧹 After dropna:", df.shape)
+    print("📊 Top tickers by row count:")
+    print(df['Ticker'].value_counts().head(10))
+
     return df
 
-def prepare_sequences(df, steps=10):
+def prepare_sequences(df, steps=6):
     """
     Prepare sequence data for the LSTM model, including appended sector info.
     """
     base_features = ['Price', 'Sentiment', 'MA', 'STD', 'RSI']
     all_X, y_class, y_reg, y_vol = [], [], [], []
-    
-    # Convert Sector to a categorical variable and create a mapping
+
     df["Sector"] = df["Sector"].astype("category")
     sector_categories = df["Sector"].cat.categories
     sector_map = {sector: idx for idx, sector in enumerate(sector_categories)}
     n_sectors = len(sector_map)
-    
-    # Process each ticker separately
+
     for ticker in df['Ticker'].unique():
         sub = df[df['Ticker'] == ticker].reset_index(drop=True)
-        if len(sub) <= steps:
+
+        # Handle missing or extreme values before scaling
+        sub = sub.replace([np.inf, -np.inf], np.nan)
+        sub['RSI'] = sub['RSI'].fillna(0)
+
+        safe_features = ['Price', 'Sentiment', 'MA', 'STD']  # Exclude RSI from filtering
+        sub = sub.dropna(subset=safe_features)
+        if len(sub) < steps + 1:
+            print(f"⛔ Skipping {ticker} — only {len(sub)} usable rows after dropna")
             continue
-        
-        scaler = MinMaxScaler()
-        scaled_main = scaler.fit_transform(sub[base_features])
-        
-        # Get the ticker's latest sector info and prepare one-hot encoding
+
+        try:
+            scaled_main = MinMaxScaler().fit_transform(sub[base_features])
+        except ValueError:
+            print(f"⚠️ Skipping {ticker} — scaler error")
+            continue
+
+        if np.all(scaled_main == scaled_main[0, :]):
+            print(f"⚠️ Skipping {ticker} — flat input features")
+            continue
+
         sector = sub["Sector"].iloc[-1]
-        sector_idx = sector_map.get(sector, None)
+        sector_idx = sector_map.get(sector)
         if sector_idx is None:
+            print(f"⚠️ Skipping {ticker} — unknown sector '{sector}'")
             continue
+
         sector_onehot = np.zeros(n_sectors)
         sector_onehot[sector_idx] = 1
-        # Repeat the sector one-hot array for each time step in the sequence
         sector_3d = np.repeat(sector_onehot.reshape(1, -1), steps, axis=0)
-        
+
+        seq_count = 0
         for i in range(steps, len(sub)):
             main_seq = scaled_main[i - steps:i]
-            # Concatenate the features and sector info along the feature axis
             full_seq = np.concatenate([main_seq, sector_3d], axis=1)
             all_X.append(full_seq)
             y_class.append(sub['Target_Class'].iloc[i])
             y_reg.append(sub['Target_Return'].iloc[i])
             y_vol.append(sub['Target_Vol'].iloc[i])
-            
-    return (np.array(all_X),
-            np.array(y_class),
-            np.array(y_reg),
-            to_categorical(np.array(y_vol), num_classes=3))
+            seq_count += 1
+
+        if seq_count:
+            print(f"✅ {ticker}: {seq_count} sequences")
+
+    print(f"\n📦 Total sequences generated: {len(all_X)}")
+    return (
+        np.array(all_X),
+        np.array(y_class),
+        np.array(y_reg),
+        to_categorical(np.array(y_vol), num_classes=3)
+    )
 
 # --- Attention Layer ---
 from tensorflow.keras.layers import Lambda
@@ -153,7 +192,7 @@ def train():
         optimizer='adam',
         loss={
             'class_output': 'binary_crossentropy',
-            'reg_output': 'mse',
+            'reg_output': MeanSquaredError(),
             'vol_output': 'categorical_crossentropy'
         },
         metrics={

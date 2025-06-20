@@ -1,0 +1,6 @@
+{
+  "python.analysis.extraPaths": [
+    "./.venv/Lib/site-packages"
+  ],
+  "python.pythonPath": ".venv\\Scripts\\python.exe"
+}
