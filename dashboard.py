@@ -7,6 +7,7 @@ from sklearn.preprocessing import MinMaxScaler
 from portfolio import Portfolio
 import os
 import subprocess
+import json
 
 # ---------- Modern Styling ----------
 st.set_page_config(page_title="S&P 500 AI Trader Dashboard", layout="wide")
@@ -56,6 +57,19 @@ st.markdown("""
 with st.sidebar:
     st.markdown("### ⚙️ Dashboard Settings")
     view_mode = st.radio("View Mode", ["Trader", "Analyst"])
+
+# ---------- Portfolio Setup ----------
+portfolio_path = "data/history/portfolio.json"
+try:
+    with open(portfolio_path) as f:
+        portfolio = json.load(f)
+except (json.JSONDecodeError, FileNotFoundError):
+    portfolio = {}
+
+# Ensure portfolio has all required keys
+portfolio.setdefault("cash", 5000)
+portfolio.setdefault("holdings", {})
+portfolio.setdefault("positions", {})
 
 # ---------- Tabs ----------
 tabs = st.tabs([
