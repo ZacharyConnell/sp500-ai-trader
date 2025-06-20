@@ -441,7 +441,7 @@ with tabs[3]:
         st.plotly_chart(fig, use_container_width=True)
 
     with st.expander("📜 Trade History"):
-        if portfolio["history"]:
+        if portfolio.get("history"):
             st.dataframe(pd.DataFrame(portfolio["history"])[::-1], use_container_width=True)
         else:
             st.info("No trades recorded yet.")
