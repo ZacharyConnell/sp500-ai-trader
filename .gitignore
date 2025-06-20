@@ -1,0 +1,23 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Secrets & logs
+.env
+*.log
+*.txt
+models/metrics.json
+
+# Streamlit & backup outputs
+data/history/
+data/alerts_log.csv
+data/predictions_log.csv
+models/backups/
+data/equity_curves/
+data/archives/
+data/backtest_trades.csv
+
+# OS clutter
+.DS_Store
+Thumbs.db
