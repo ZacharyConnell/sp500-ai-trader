@@ -422,7 +422,7 @@ with tabs[4]:
     else:
         st.info("No alerts logged yet. Run alert.py.")
 
-    st.subheader("🏢 Sector-wise Outlook")
+        st.subheader("🏢 Sector-wise Outlook")
     pred_file = "data/predictions_today.csv"
     if os.path.exists(pred_file):
         preds = pd.read_csv(pred_file)
@@ -430,6 +430,7 @@ with tabs[4]:
             sector_summary = preds.groupby(["Sector", "Suggested Action"]).size().unstack(fill_value=0)
             st.bar_chart(sector_summary)
         else:
+            st.warning("No sector data available in predictions file.")
 
 # ---------- Tab 5: Momentum & Volatility Scanner ----------
 with tabs[5]:
