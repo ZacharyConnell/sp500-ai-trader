@@ -353,8 +353,7 @@ with tabs[3]:
     else:
         portfolio = {"cash": 100000, "positions": {}, "history": []}
 
-    cash = st.number_input("💰 Starting Cash", value=portfolio["cash"], step=1000)
-    ticker = st.selectbox("Choose ticker", df["Ticker"].unique(), key="portfolio_select")
+    cash = st.number_input("💰 Starting Cash", value=portfolio.get("cash", 10000), step=1000)    ticker = st.selectbox("Choose ticker", df["Ticker"].unique(), key="portfolio_select")
     shares = st.number_input("Shares", step=10, value=0)
 
     col1, col2 = st.columns(2)
