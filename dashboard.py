@@ -637,7 +637,8 @@ with tabs[7]:
         st.warning("Backtest summary not found. Run backtest.py first.")
 
     if os.path.exists(TRADE_LOG_FILE):
-        df_trades = pd.read_csv(TRADE_LOG_FILE)
-        st.markdown("### 📜 Recent Trade Log")
-        st.dataframe(df_trades.tail(30), use_container_width=True)
-    else:
+    df_trades = pd.read_csv(TRADE_LOG_FILE)
+    st.markdown("### 📜 Recent Trade Log")
+    st.dataframe(df_trades.tail(30), use_container_width=True)
+else:
+    st.info("No trade log found. Run backtest.py to generate results.")
