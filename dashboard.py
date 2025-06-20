@@ -429,7 +429,7 @@ with tabs[4]:
         if "Sector" in preds.columns:
             sector_summary = preds.groupby(["Sector", "Suggested Action"]).size().unstack(fill_value=0)
             st.bar_chart(sector_summary)
-        else
+        else:
 
 # ---------- Tab 5: Momentum & Volatility Scanner ----------
 with tabs[5]:
