@@ -410,6 +410,8 @@ with tabs[3]:
     st.markdown("### 📊 Portfolio Summary")
     rows = []
     total_value = 0
+    if "positions" not in portfolio:
+        portfolio["positions"] = {}
     for tkr, data in portfolio["positions"].items():
         price = latest_prices.loc[tkr]["Price"]
         val = price * data["shares"]
