@@ -70,6 +70,7 @@ except (json.JSONDecodeError, FileNotFoundError):
 portfolio.setdefault("cash", 5000)
 portfolio.setdefault("holdings", {})
 portfolio.setdefault("positions", {})
+portfolio.setdefault("history", {})
 
 # ---------- Tabs ----------
 tabs = st.tabs([
