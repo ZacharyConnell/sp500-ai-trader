@@ -640,4 +640,4 @@ with tabs[7]:
         df_trades = pd.read_csv(TRADE_LOG_FILE)
         st.markdown("### 📜 Recent Trade Log")
         st.dataframe(df_trades.tail(30), use_container_width=True)
-    else
+    else:
