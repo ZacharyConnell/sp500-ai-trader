@@ -88,18 +88,25 @@ with tabs[0]:
     st.subheader("🧭 AI Market Overview")
 
     import subprocess
+    import sys
 
     # --- Prediction Trigger ---
     st.markdown("### 🔮 Generate Latest Predictions")
     if st.button("Run predict_all.py"):
         with st.spinner("Running prediction model..."):
             try:
-                result = subprocess.run(["python", "predict_all.py"], capture_output=True, text=True, check=True)
+                result = subprocess.run(
+                    [sys.executable, "predict_all.py"],
+                    stdout=subprocess.PIPE,
+                    stderr=subprocess.PIPE,
+                    text=True,
+                    check=True
+                )
                 st.success("✅ Predictions generated successfully.")
-                st.text(result.stdout)
+                st.code(result.stdout, language="bash")
             except subprocess.CalledProcessError as e:
                 st.error("❌ Prediction script failed.")
-                st.text(e.stderr)
+                st.code(e.stderr, language="bash")
 
     PRED_FILE = "data/predictions_today.csv"
     METRICS_FILE = "models/metrics.json"
@@ -125,8 +132,8 @@ with tabs[0]:
 
         with col2:
             fig = go.Figure(data=[go.Pie(labels=pie_labels, values=pie_values, hole=0.4)])
-            fig.update_traces(textinfo="label+percent", 
-                                marker=dict(colors=["#90ee90", "#ffcccb", "#dddddd"]))
+            fig.update_traces(textinfo="label+percent",
+                              marker=dict(colors=["#90ee90", "#ffcccb", "#dddddd"]))
             fig.update_layout(margin=dict(t=10, b=10, l=10, r=10))
             st.plotly_chart(fig, use_container_width=True)
 
@@ -180,7 +187,7 @@ with tabs[0]:
                             m = json.load(f)
                         st.write(f"**Last Retrained:** {m['timestamp']}")
                         st.write(f"**Rows Used:** {m['data_rows']}")
-                        st.write(f"**Train Accuracy:** {round(m['train_acc']*100,2)}%")
+                        st.write(f"**Train Accuracy:** {round(m['train_acc']*100, 2)}%")
                         st.write(f"**Reg MAE:** {round(m['reg_mae'], 4)}")
                         st.write(f"**Volatility Accuracy:** {round(m['vol_acc']*100, 2)}%")
                     else:
@@ -190,7 +197,7 @@ with tabs[0]:
                     confirm = st.checkbox("Yes, retrain now", key="retrain_confirm")
                     if st.button("🔁 Retrain Model") and confirm:
                         with st.spinner("Retraining in progress..."):
-                            subprocess.run(["python", "model.py"])
+                            subprocess.run([sys.executable, "model.py"])
                         st.success("Model retrained successfully.")
 
 # ---------- Tab 1: Market View ----------
