@@ -18,9 +18,11 @@ files = sorted([
 print("📁 Searching for:", f"{PRED_PATH}/predictions_*.csv")
 print("🔍 Valid files found:", files)
 
-if len(files) < 2:
-    print("❌ Not enough historical prediction files to evaluate.")
+if not completed_files:
+    print("❌ No completed prediction files available for evaluation.")
     exit()
+
+latest_file = completed_files[-1]
 
 # Step 2: Get the most recent COMPLETED prediction file (excluding today)
 today_str = datetime.now().strftime("%Y-%m-%d")
