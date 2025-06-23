@@ -283,6 +283,14 @@ with tabs[1]:
 with tabs[2]:
     st.subheader("🔍 Stock Analyzer")
 
+    import os
+    import pandas as pd
+    import numpy as np
+    from keras.models import load_model
+    from keras.losses import MeanSquaredError
+    from sklearn.preprocessing import MinMaxScaler
+    import plotly.graph_objects as go
+
     DATA_FILE = "data/sp500_data.csv"
     MODEL_FILE = "models/lstm_model.h5"
     PRED_LOG = "data/predictions_log.csv"
@@ -333,7 +341,11 @@ with tabs[2]:
         if os.path.exists(MODEL_FILE):
             if st.button("🔮 Predict Next Move"):
                 try:
-                    model = load_model(MODEL_FILE)
+                    model = load_model(
+                        MODEL_FILE,
+                        custom_objects={"mse": MeanSquaredError()},
+                        compile=False
+                    )
                     last = df_t[['Price', 'Sentiment', 'MA', 'STD', 'RSI']].dropna().tail(10)
                     if len(last) < 10:
                         st.warning("Not enough recent data with all features.")
@@ -341,7 +353,7 @@ with tabs[2]:
                         scaler = MinMaxScaler()
                         scaled = scaler.fit_transform(last)
                         X = np.expand_dims(scaled, axis=0)
-                        out = model.predict(X)
+                        out = model.predict(X, verbose=0)
                         if isinstance(out, list):
                             pred_class = out[0]
                             pred_return = out[1]
