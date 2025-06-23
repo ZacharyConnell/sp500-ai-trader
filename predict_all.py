@@ -5,6 +5,8 @@ from sklearn.preprocessing import MinMaxScaler
 from datetime import datetime
 import os
 import shutil
+import sys
+print("🐍 Python interpreter:", sys.executable)
 
 # --- File Paths ---
 DATA_FILE = "data/sp500_data.csv"

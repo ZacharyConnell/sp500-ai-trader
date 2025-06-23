@@ -76,11 +76,11 @@ portfolio.setdefault("history", {})
 tabs = st.tabs([
     "🧭 Overview", 
     "📈 Market View", 
-    "💼 Portfolio Tracker",
-    "🚨 Alerts & Sectors", 
-    "📊 Momentum Scanner",
-    "🧠 Explainability", 
-    "📉 Backtest"
+    "📉 Stock Analyzer",
+    "💼 Portfolio Tracker", 
+    "🚨 Alerts & Sectors",
+    "📊 Momentum Scanner", 
+    "🧠 Explainability & Backtest"
 ])
 
 # ---------- Tab 0: Overview ----------
