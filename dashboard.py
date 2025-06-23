@@ -8,10 +8,27 @@ from portfolio import Portfolio
 import os
 import subprocess
 import json
+import datetime
+import sys
+
+# ---------- Scheduled Auto-Run (every hour during market hours) ----------
+def should_trigger_auto_pipeline():
+    now = datetime.datetime.now(datetime.timezone.utc).astimezone()
+    est_hour = now.hour  # assumes server is in EST; adjust if needed
+    weekday = now.weekday()
+    minute = now.minute
+    return weekday < 5 and 9 <= est_hour <= 16 and minute == 0
+
+if should_trigger_auto_pipeline():
+    try:
+        subprocess.run([sys.executable, "collector.py"], timeout=90)
+        subprocess.run([sys.executable, "model.py"], timeout=120)
+        subprocess.run([sys.executable, "predict_all.py"], timeout=120)
+    except Exception as e:
+        print("⛔ Scheduled pipeline failed:", e)
 
 # ---------- Modern Styling ----------
 st.set_page_config(page_title="S&P 500 AI Trader Dashboard", layout="wide")
-
 st.markdown("""
     <style>
     body { background-color: #f9fbfc; }
@@ -66,7 +83,6 @@ try:
 except (json.JSONDecodeError, FileNotFoundError):
     portfolio = {}
 
-# Ensure portfolio has all required keys
 portfolio.setdefault("cash", 5000)
 portfolio.setdefault("holdings", {})
 portfolio.setdefault("positions", {})
@@ -87,27 +103,34 @@ tabs = st.tabs([
 with tabs[0]:
     st.subheader("🧭 AI Market Overview")
 
-    import subprocess
-    import sys
+    st.markdown("### 🔄 Run Core Pipeline")
+    col1, col2, col3 = st.columns(3)
 
-    # --- Prediction Trigger ---
-    st.markdown("### 🔮 Generate Latest Predictions")
-    if st.button("Run predict_all.py"):
-        with st.spinner("Running prediction model..."):
-            try:
-                result = subprocess.run(
-                    [sys.executable, "predict_all.py"],
-                    stdout=subprocess.PIPE,
-                    stderr=subprocess.PIPE,
-                    text=True,
-                    check=True
-                )
-                st.success("✅ Predictions generated successfully.")
-                st.code(result.stdout, language="bash")
-            except subprocess.CalledProcessError as e:
-                st.error("❌ Prediction script failed.")
-                st.code(e.stderr, language="bash")
+    with col1:
+        if st.button("📦 Run Data Collector"):
+            with st.spinner("Collecting data..."):
+                result = subprocess.run([sys.executable, "collector.py"], capture_output=True, text=True)
+                st.text(result.stdout or result.stderr)
 
+    with col2:
+        if st.button("🧠 Train Model"):
+            with st.spinner("Training model..."):
+                result = subprocess.run([sys.executable, "model.py"], capture_output=True, text=True)
+                st.text(result.stdout or result.stderr)
+
+    with col3:
+        if st.button("🔮 Predict Today"):
+            with st.spinner("Generating predictions..."):
+                result = subprocess.run([sys.executable, "predict_all.py"], capture_output=True, text=True)
+                st.text(result.stdout or result.stderr)
+
+    st.markdown("### 📊 Evaluate Model Accuracy")
+    if st.button("📊 Evaluate Yesterday’s Predictions"):
+        with st.spinner("Running evaluation script..."):
+            result = subprocess.run([sys.executable, "evaluate_predictions.py"], capture_output=True, text=True)
+            st.text(result.stdout or result.stderr)
+
+    # ---------- Smart Dashboard ----------
     PRED_FILE = "data/predictions_today.csv"
     METRICS_FILE = "models/metrics.json"
     MODEL_FILE = "models/lstm_model.h5"
@@ -175,30 +198,18 @@ with tabs[0]:
         ]
         st.markdown("\n".join(summary))
 
-        # ---------- Analyst Mode Panel ----------
         if view_mode == "Analyst":
             st.markdown("### ⚙️ Model Diagnostics")
             with st.expander("🔍 Health Report & Retraining", expanded=False):
                 colA, colB = st.columns([2, 1])
                 with colA:
                     if os.path.exists(METRICS_FILE):
-                        import json
                         with open(METRICS_FILE) as f:
                             m = json.load(f)
                         st.write(f"**Last Retrained:** {m['timestamp']}")
                         st.write(f"**Rows Used:** {m['data_rows']}")
                         st.write(f"**Train Accuracy:** {round(m['train_acc']*100, 2)}%")
-                        st.write(f"**Reg MAE:** {round(m['reg_mae'], 4)}")
-                        st.write(f"**Volatility Accuracy:** {round(m['vol_acc']*100, 2)}%")
-                    else:
-                        st.info("No training metrics logged yet.")
-                with colB:
-                    st.markdown("⚠️ Model retraining is CPU-intensive and may pause the UI for several seconds.")
-                    confirm = st.checkbox("Yes, retrain now", key="retrain_confirm")
-                    if st.button("🔁 Retrain Model") and confirm:
-                        with st.spinner("Retraining in progress..."):
-                            subprocess.run([sys.executable, "model.py"])
-                        st.success("Model retrained successfully.")
+                        st.write(f"**Reg MAE:** {round(m['reg_mae'], 4)}
 
 # ---------- Tab 1: Market View ----------
 with tabs[1]:
