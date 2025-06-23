@@ -221,7 +221,7 @@ with tabs[1]:
         with st.expander("📋 Filters"):
             action = st.selectbox("Suggested Action", ["All", "Buy", "Sell", "Hold"])
             vol_filter = st.selectbox("Volatility Class", ["All", "Low", "Medium", "High"])
-            min_conf = st.slider("Confidence Threshold (%)", 50, 100, 60)
+            min_conf = st.slider("Confidence Threshold (%)", 0, 100, 60)
             min_return = st.slider("Expected Return % (min)", -10, 10, 0)
             search = st.text_input("Search Ticker", key="search_tab5")
 
