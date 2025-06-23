@@ -1,0 +1,36 @@
+name: Hourly Prediction Engine
+
+on:
+  schedule:
+    # Runs Monday–Friday hourly from 9:30am to 4:30pm EST
+    - cron: '30 13-20 * * 1-5'  # 9:30–16:30 EST = 13:30–20:30 UTC
+
+  workflow_dispatch:  # Allows manual trigger from GitHub interface
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🛎️ Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: 🐍 Set Up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 📦 Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: 📥 Collect Market Data
+        run: python collector.py
+
+      - name: 🧠 Train Model
+        run: python model.py
+
+      - name: 🔮 Run Predictions
+        run: python predict_all.py
+        
