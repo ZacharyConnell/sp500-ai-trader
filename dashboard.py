@@ -97,6 +97,7 @@ tabs = st.tabs([
     "🚨 Alerts & Sectors",
     "📊 Momentum Scanner", 
     "🧠 Explainability & Backtest"
+    "📈 Model Accuracy"
 ])
 
 # ---------- Tab 0: Overview ----------
@@ -209,7 +210,7 @@ with tabs[0]:
                         st.write(f"**Last Retrained:** {m['timestamp']}")
                         st.write(f"**Rows Used:** {m['data_rows']}")
                         st.write(f"**Train Accuracy:** {round(m['train_acc']*100, 2)}%")
-                        st.write(f"**Reg MAE:** {round(m['reg_mae'], 4)}
+                        st.write(f"**Reg MAE:** {round(m['reg_mae'], 4)}")
 
 # ---------- Tab 1: Market View ----------
 with tabs[1]:
@@ -785,3 +786,39 @@ with tabs[6]:  # Make sure this is the correct index for "Backtest"
             st.error(f"Could not load trade log: {e}")
     else:
         st.info("No trade log found or it is empty. Run backtest.py to generate results.")
+
+
+# ---------- Tab 8: Accuracy ----------
+with tabs[7]:
+    st.subheader("📈 Model Prediction Accuracy")
+
+    import glob
+
+    files = sorted(glob.glob("data/history/predictions_*.csv"))
+    dfs = []
+    for file in files:
+        df = pd.read_csv(file)
+        if "Actual Outcome" in df.columns:
+            date = file.split("_")[-1].replace(".csv", "")
+            df["Date"] = date
+            dfs.append(df)
+
+    if not dfs:
+        st.info("No evaluated predictions found yet.")
+    else:
+        hist = pd.concat(dfs)
+        hist["Correct"] = hist["Actual Outcome"] == "Correct"
+        daily = hist.groupby("Date")["Correct"].mean() * 100
+        st.metric("Average Accuracy", f"{daily.mean():.2f}%")
+
+        fig = go.Figure(go.Bar(
+            x=daily.index,
+            y=daily.values,
+            marker_color="#0e76fd"
+        ))
+        fig.update_layout(title="Daily Prediction Accuracy", yaxis_title="Accuracy (%)")
+        st.plotly_chart(fig, use_container_width=True)
+
+        st.markdown("### 🔍 Recent Accuracy by Action")
+        by_action = hist.groupby(["Date", "Suggested Action"])["Correct"].mean().unstack().fillna(0) * 100
+        st.line_chart(by_action)
