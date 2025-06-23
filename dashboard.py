@@ -299,6 +299,26 @@ with tabs[2]:
         st.warning("Historical data not found. Run collector.py.")
     else:
         df = pd.read_csv(DATA_FILE).sort_values("Timestamp")
+
+        # -------- Feature Engineering --------
+        df['MA'] = df.groupby("Ticker")['Price'].transform(lambda x: x.rolling(5).mean())
+        df['STD'] = df.groupby("Ticker")['Price'].transform(lambda x: x.rolling(5).std())
+
+        def rsi(series, period=14):
+            delta = series.diff()
+            up = delta.clip(lower=0)
+            down = -1 * delta.clip(upper=0)
+            ma_up = up.rolling(period).mean()
+            ma_down = down.rolling(period).mean()
+            rs = ma_up / ma_down
+            return 100 - (100 / (1 + rs))
+
+        df['RSI'] = df.groupby("Ticker")["Price"].transform(lambda x: rsi(x))
+        df['RSI'] = df['RSI'].fillna(0)
+        df = df.dropna(subset=['Sentiment', 'MA', 'STD', 'Price'])
+
+        # ------------------------------------
+
         tickers = df['Ticker'].unique()
         ticker = st.selectbox("Select stock", tickers, key="stock_analyzer_select")
 
