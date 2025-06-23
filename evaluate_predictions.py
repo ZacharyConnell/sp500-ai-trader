@@ -9,7 +9,7 @@ print("🧭 Current Working Directory:", os.getcwd())
 PRED_PATH = "data/history"
 DATA_PATH = "data/sp500_data.csv"
 
-# Step 1: Gather prediction files with proper date format, skip placeholders
+# Step 1: Gather valid prediction files (not placeholders)
 files = sorted([
     f for f in glob.glob(f"{PRED_PATH}/predictions_*.csv")
     if os.path.getsize(f) > 0 and re.search(r"predictions_\d{4}-\d{2}-\d{2}\.csv", f)
@@ -18,13 +18,7 @@ files = sorted([
 print("📁 Searching for:", f"{PRED_PATH}/predictions_*.csv")
 print("🔍 Valid files found:", files)
 
-if not completed_files:
-    print("❌ No completed prediction files available for evaluation.")
-    exit()
-
-latest_file = completed_files[-1]
-
-# Step 2: Get the most recent COMPLETED prediction file (excluding today)
+# Step 2: Exclude today's file and get most recent completed prediction
 today_str = datetime.now().strftime("%Y-%m-%d")
 completed_files = [f for f in files if today_str not in f]
 
@@ -35,7 +29,7 @@ if not completed_files:
 latest_file = completed_files[-1]
 print(f"🗂️ Evaluating predictions in: {latest_file}")
 
-# Step 3: Load predictions and market data
+# Step 3: Load prediction and market data
 df_preds = pd.read_csv(latest_file)
 df_data = pd.read_csv(DATA_PATH)
 
@@ -64,6 +58,9 @@ for _, row in df_preds.iterrows():
 
     results.append({**row, "Comparison Price": next_price, "Actual Outcome": outcome})
 
-# Step 5: Overwrite file with evaluated results
-pd.DataFrame(results).to_csv(latest_file, index=False)
+# Step 5: Overwrite prediction file with evaluation results
+df_out = pd.DataFrame(results)
+print("🔎 Sample evaluated row:")
+print(df_out.head(1))
+df_out.to_csv(latest_file, index=False)
 print("✅ Evaluation complete. Updated:", latest_file)
