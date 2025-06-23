@@ -213,6 +213,11 @@ with tabs[1]:
     else:
         df = pd.read_csv(PRED_FILE)
 
+        # Ensure proper column types
+        df["Confidence"] = pd.to_numeric(df["Confidence"], errors="coerce")
+        df["Expected Return %"] = pd.to_numeric(df["Expected Return %"], errors="coerce")
+        df = df.dropna(subset=["Confidence", "Expected Return %", "Suggested Action"])
+
         with st.expander("📋 Filters"):
             action = st.selectbox("Suggested Action", ["All", "Buy", "Sell", "Hold"])
             vol_filter = st.selectbox("Volatility Class", ["All", "Low", "Medium", "High"])
@@ -220,13 +225,18 @@ with tabs[1]:
             min_return = st.slider("Expected Return % (min)", -10, 10, 0)
             search = st.text_input("Search Ticker", key="search_tab5")
 
-        filtered = df[(df["Confidence"] >= min_conf) & (df["Expected Return %"] >= min_return)]
+        filtered = df[
+            (df["Confidence"] >= min_conf) &
+            (df["Expected Return %"] >= min_return)
+        ]
         if action != "All":
             filtered = filtered[filtered["Suggested Action"] == action]
         if vol_filter != "All" and "Volatility Class" in filtered.columns:
             filtered = filtered[filtered["Volatility Class"] == vol_filter]
         if search:
-            filtered = filtered[filtered["Ticker"].str.contains(search.upper())]
+            filtered = filtered[filtered["Ticker"].str.contains(search.upper(), na=False)]
+
+        st.markdown(f"**{len(filtered)}** results found after filtering.")
 
         top_buy = filtered[filtered["Suggested Action"] == "Buy"].sort_values("Confidence", ascending=False).head(1)
         top_sell = filtered[filtered["Suggested Action"] == "Sell"].sort_values("Confidence", ascending=False).head(1)
@@ -248,27 +258,35 @@ with tabs[1]:
                 <strong style='font-size:20px'>{df_row["Ticker"]}</strong> • {df_row["Sector"]}<br/>
                 <span style='font-size:16px'>
                 {df_row["Prediction"]} <b>{df_row["Suggested Action"]}</b><br/>
-                Confidence: <b>{df_row["Confidence"]}%</b><br/>
-                Volatility: <b>{df_row["Volatility Class"]}</b>
+                Confidence: <b>{round(df_row["Confidence"], 1)}%</b><br/>
+                Volatility: <b>{df_row.get("Volatility Class", "N/A")}</b>
                 </span>
             </div>
             """
 
         if not top_buy.empty:
             cols[0].markdown(format_tile(top_buy.iloc[0]), unsafe_allow_html=True)
+        else:
+            cols[0].info("No top Buy pick found")
+
         if not top_sell.empty:
             cols[1].markdown(format_tile(top_sell.iloc[0]), unsafe_allow_html=True)
+        else:
+            cols[1].info("No top Sell pick found")
+
         if not top_hold.empty:
             cols[2].markdown(format_tile(top_hold.iloc[0]), unsafe_allow_html=True)
+        else:
+            cols[2].info("No top Hold pick found")
 
-        # Styled DataFrame with colored volatility class
+        # Styled DataFrame
         def highlight_vol(val):
             if val == "Low":
-                return "background-color:#d4edda"  # light green
+                return "background-color:#d4edda"
             elif val == "Medium":
-                return "background-color:#fff3cd"  # soft yellow
+                return "background-color:#fff3cd"
             elif val == "High":
-                return "background-color:#f8d7da"  # light red
+                return "background-color:#f8d7da"
             return ""
 
         styled = filtered.style\
@@ -277,7 +295,11 @@ with tabs[1]:
                       subset=["Suggested Action"])\
             .applymap(highlight_vol, subset=["Volatility Class"])
 
-        st.dataframe(styled, use_container_width=True, height=600)
+        st.markdown("### 📋 Filtered Prediction Table")
+        if filtered.empty:
+            st.info("No signals match the current filters.")
+        else:
+            st.dataframe(styled, use_container_width=True, height=600)
 
 # ---------- Tab 2: Stock Analyzer ----------
 with tabs[2]:
