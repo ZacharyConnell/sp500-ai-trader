@@ -551,11 +551,10 @@ with tabs[6]:
 
         features = ['Price', 'Sentiment', 'MA', 'STD', 'RSI']
         df_t = df[df['Ticker'] == ticker].dropna().sort_values("Timestamp").tail(10)
-
         available_features = [col for col in features if col in df_t.columns]
 
-        if len(df_t) < 10:
-            st.warning("Not enough data to explain prediction.")
+        if len(df_t) < 6:
+            st.warning("Not enough data to explain prediction (need at least 6 rows).")
         elif not available_features:
             st.error("No valid features available to explain prediction.")
         else:
@@ -566,7 +565,23 @@ with tabs[6]:
             latest_features = df_t[available_features]
             scaler = MinMaxScaler()
             scaled = scaler.fit_transform(latest_features)
-            X = np.expand_dims(scaled, axis=0)
+
+            # Build prediction input with dummy sector data
+            model_input_shape = model.input_shape  # (None, 6, total_features)
+            seq_len, total_features = model_input_shape[1], model_input_shape[2]
+
+            if scaled.shape[0] < seq_len:
+                st.warning(f"Need at least {seq_len} timesteps for prediction.")
+                st.stop()
+
+            X_seq = scaled[-seq_len:]
+            num_dummy = total_features - X_seq.shape[1]
+            if num_dummy < 0:
+                st.error("Model expects fewer features than provided. Input mismatch.")
+                st.stop()
+
+            sector_dummy = np.zeros((seq_len, num_dummy))
+            X = np.concatenate([X_seq, sector_dummy], axis=1).reshape(1, seq_len, total_features)
 
             pred_class, pred_return, *_ = model.predict(X, verbose=0)
             confidence = round(pred_class[0][0] * 100, 2)
@@ -634,7 +649,7 @@ with tabs[6]:
                     weights = attn_output[0][-1]
 
                     fig_attn = go.Figure(go.Bar(
-                        x=[f"T-{9 - i}" for i in range(len(weights))],
+                        x=[f"T-{seq_len - 1 - i}" for i in range(len(weights))],
                         y=weights,
                         marker_color="#ff914d"
                     ))
