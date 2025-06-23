@@ -554,7 +554,8 @@ with tabs[6]:
         if len(df_t) < 10:
             st.warning("Not enough data to explain prediction.")
         else:
-            model = load_model(MODEL_FILE)
+            from keras.losses import MeanSquaredError
+            model = load_model(MODEL_FILE, custom_objects={"loss": MeanSquaredError()}, compile=False)
             latest_features = df_t[features]
             scaler = MinMaxScaler()
             scaled = scaler.fit_transform(latest_features)
