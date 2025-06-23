@@ -537,6 +537,7 @@ with tabs[6]:
 
     import shap
     import matplotlib.pyplot as plt
+    from keras.losses import MeanSquaredError
 
     LOG_FILE = "data/predictions_log.csv"
     PRED_FILE = "data/predictions_today.csv"
@@ -551,12 +552,18 @@ with tabs[6]:
         features = ['Price', 'Sentiment', 'MA', 'STD', 'RSI']
         df_t = df[df['Ticker'] == ticker].dropna().sort_values("Timestamp").tail(10)
 
+        available_features = [col for col in features if col in df_t.columns]
+
         if len(df_t) < 10:
             st.warning("Not enough data to explain prediction.")
+        elif not available_features:
+            st.error("No valid features available to explain prediction.")
         else:
-            from keras.losses import MeanSquaredError
+            if len(available_features) < len(features):
+                st.warning(f"Missing features: {set(features) - set(available_features)}")
+
             model = load_model(MODEL_FILE, custom_objects={"loss": MeanSquaredError()}, compile=False)
-            latest_features = df_t[features]
+            latest_features = df_t[available_features]
             scaler = MinMaxScaler()
             scaled = scaler.fit_transform(latest_features)
             X = np.expand_dims(scaled, axis=0)
@@ -613,7 +620,7 @@ with tabs[6]:
                     mean_abs = np.abs(shap_class).mean(axis=0)
 
                     fig, ax = plt.subplots()
-                    shap.bar_plot(mean_abs, feature_names=features, show=False)
+                    shap.bar_plot(mean_abs, feature_names=available_features, show=False)
                     st.pyplot(fig)
                 except Exception as e:
                     st.warning(f"SHAP explanation failed: {e}")
