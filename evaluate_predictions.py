@@ -1,21 +1,24 @@
 import pandas as pd
-from datetime import datetime, timedelta
 import os
+import glob
 
 PRED_PATH = "data/history"
 DATA_PATH = "data/sp500_data.csv"
 
-today = datetime.now().date()
-yesterday = today - timedelta(days=1)
-
-yesterday_file = f"{PRED_PATH}/predictions_{yesterday}.csv"
-if not os.path.exists(yesterday_file):
-    print("❌ No predictions file for yesterday.")
+# Step 1: Locate the most recent predictions file
+files = sorted(glob.glob(f"{PRED_PATH}/predictions_*.csv"))
+if not files:
+    print("❌ No prediction files found in history.")
     exit()
 
-df_preds = pd.read_csv(yesterday_file)
+latest_file = files[-1]
+print(f"🗂️ Evaluating predictions in: {latest_file}")
+
+# Step 2: Load predictions and historical data
+df_preds = pd.read_csv(latest_file)
 df_data = pd.read_csv(DATA_PATH)
 
+# Step 3: Evaluation logic
 def get_next_price(ticker, timestamp):
     subset = df_data[(df_data["Ticker"] == ticker) & (df_data["Timestamp"] > timestamp)]
     if subset.empty:
@@ -25,7 +28,7 @@ def get_next_price(ticker, timestamp):
 results = []
 for _, row in df_preds.iterrows():
     next_price = get_next_price(row["Ticker"], row["Timestamp"])
-    if next_price is None:
+    if next_price is None or pd.isna(next_price):
         outcome = "Unknown"
     else:
         delta = ((next_price - row["Price"]) / row["Price"]) * 100
@@ -40,5 +43,6 @@ for _, row in df_preds.iterrows():
 
     results.append({**row, "Comparison Price": next_price, "Actual Outcome": outcome})
 
-pd.DataFrame(results).to_csv(yesterday_file, index=False)
-print("✅ Evaluation complete. Updated yesterday's prediction file.")
+# Step 4: Save results back to the same file
+pd.DataFrame(results).to_csv(latest_file, index=False)
+print("✅ Evaluation complete. Updated:", latest_file)
