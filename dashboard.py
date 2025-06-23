@@ -622,7 +622,7 @@ with tabs[6]:
             if len(available_features) < len(features):
                 st.warning(f"Missing features: {set(features) - set(available_features)}")
 
-            model = load_model(MODEL_FILE, custom_objects={"loss": MeanSquaredError()}, compile=False)
+            model = load_model(MODEL_FILE, custom_objects={"mse": MeanSquaredError()}, compile=False)
             latest_features = df_t[available_features]
             scaler = MinMaxScaler()
             scaled = scaler.fit_transform(latest_features)
