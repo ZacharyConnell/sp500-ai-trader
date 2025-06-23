@@ -11,3 +11,4 @@ lxml
 python-dotenv
 matplotlib
 shap
+nltk
