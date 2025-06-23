@@ -671,7 +671,7 @@ with tabs[6]:
                         st.info(f"📦 Volatility Class: **{vol_class}**\n\n🔁 Suggested Action: **{action}**")
 
 # ---------- Tab 7: Backtest ----------
-with tabs[7]:
+with tabs[6]:
     st.subheader("📉 Model Backtest Results")
 
     SUMMARY_FILE = "data/backtest_summary.csv"
