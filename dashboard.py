@@ -671,31 +671,45 @@ with tabs[6]:
                         st.info(f"📦 Volatility Class: **{vol_class}**\n\n🔁 Suggested Action: **{action}**")
 
 # ---------- Tab 7: Backtest ----------
-with tabs[6]:
+with tabs[6]:  # Make sure this is the correct index for "Backtest"
     st.subheader("📉 Model Backtest Results")
 
     SUMMARY_FILE = "data/backtest_summary.csv"
     TRADE_LOG_FILE = "data/backtest_trades.csv"
     EQUITY_DIR = "data/equity_curves"
 
-    if os.path.exists(SUMMARY_FILE):
-        df_summary = pd.read_csv(SUMMARY_FILE)
-        st.markdown("### 📊 Backtest Summary (Top 10)")
-        st.dataframe(df_summary.head(10), use_container_width=True)
+    # Handle empty or missing summary file
+    if os.path.exists(SUMMARY_FILE) and os.path.getsize(SUMMARY_FILE) > 0:
+        try:
+            df_summary = pd.read_csv(SUMMARY_FILE)
+            if df_summary.empty:
+                st.warning("Backtest summary is empty. Run backtest.py to generate results.")
+            else:
+                st.markdown("### 📊 Backtest Summary (Top 10)")
+                st.dataframe(df_summary.head(10), use_container_width=True)
 
-        st.markdown("### 🥇 Select a Ticker to View Equity Curve")
-        selected = st.selectbox("Ticker", df_summary["Ticker"].tolist(), key="backtest_ticker")
-        equity_path = f"{EQUITY_DIR}/{selected}_equity.png"
-        if os.path.exists(equity_path):
-            st.image(equity_path, use_column_width=True)
-        else:
-            st.info("No equity plot available for this ticker.")
+                st.markdown("### 🥇 Select a Ticker to View Equity Curve")
+                selected = st.selectbox("Ticker", df_summary["Ticker"].tolist(), key="backtest_ticker")
+                equity_path = f"{EQUITY_DIR}/{selected}_equity.png"
+                if os.path.exists(equity_path):
+                    st.image(equity_path, use_column_width=True)
+                else:
+                    st.info("No equity plot available for this ticker.")
+        except Exception as e:
+            st.error(f"Could not load backtest summary: {e}")
     else:
-        st.warning("Backtest summary not found. Run backtest.py first.")
+        st.warning("Backtest summary not found or is empty. Run backtest.py to generate results.")
 
-    if os.path.exists(TRADE_LOG_FILE):
-        df_trades = pd.read_csv(TRADE_LOG_FILE)
-        st.markdown("### 📜 Recent Trade Log")
-        st.dataframe(df_trades.tail(30), use_container_width=True)
+    # Handle trade log
+    if os.path.exists(TRADE_LOG_FILE) and os.path.getsize(TRADE_LOG_FILE) > 0:
+        try:
+            df_trades = pd.read_csv(TRADE_LOG_FILE)
+            if not df_trades.empty:
+                st.markdown("### 📜 Recent Trade Log")
+                st.dataframe(df_trades.tail(30), use_container_width=True)
+            else:
+                st.info("Trade log is empty.")
+        except Exception as e:
+            st.error(f"Could not load trade log: {e}")
     else:
-        st.info("No trade log found. Run backtest.py to generate results.")
+        st.info("No trade log found or it is empty. Run backtest.py to generate results.")
