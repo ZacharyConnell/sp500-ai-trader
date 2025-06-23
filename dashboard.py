@@ -211,7 +211,7 @@ with tabs[1]:
             vol_filter = st.selectbox("Volatility Class", ["All", "Low", "Medium", "High"])
             min_conf = st.slider("Confidence Threshold (%)", 50, 100, 60)
             min_return = st.slider("Expected Return % (min)", -10, 10, 0)
-            search = st.text_input("Search Ticker")
+            search = st.text_input("Search Ticker", key="search_tab5")
 
         filtered = df[(df["Confidence"] >= min_conf) & (df["Expected Return %"] >= min_return)]
         if action != "All":
