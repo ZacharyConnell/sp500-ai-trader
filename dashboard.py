@@ -96,7 +96,7 @@ tabs = st.tabs([
     "💼 Portfolio Tracker", 
     "🚨 Alerts & Sectors",
     "📊 Momentum Scanner", 
-    "🧠 Explainability & Backtest"
+    "🧠 Explainability & Backtest",
     "📈 Model Accuracy"
 ])
 
