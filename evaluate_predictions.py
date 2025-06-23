@@ -1,24 +1,43 @@
 import pandas as pd
 import os
 import glob
+import re
+from datetime import datetime
+
+print("🧭 Current Working Directory:", os.getcwd())
 
 PRED_PATH = "data/history"
 DATA_PATH = "data/sp500_data.csv"
 
-# Step 1: Locate the most recent predictions file
-files = sorted(glob.glob(f"{PRED_PATH}/predictions_*.csv"))
-if not files:
-    print("❌ No prediction files found in history.")
+# Step 1: Gather prediction files with proper date format, skip placeholders
+files = sorted([
+    f for f in glob.glob(f"{PRED_PATH}/predictions_*.csv")
+    if os.path.getsize(f) > 0 and re.search(r"predictions_\d{4}-\d{2}-\d{2}\.csv", f)
+])
+
+print("📁 Searching for:", f"{PRED_PATH}/predictions_*.csv")
+print("🔍 Valid files found:", files)
+
+if len(files) < 2:
+    print("❌ Not enough historical prediction files to evaluate.")
     exit()
 
-latest_file = files[-1]
+# Step 2: Get the most recent COMPLETED prediction file (excluding today)
+today_str = datetime.now().strftime("%Y-%m-%d")
+completed_files = [f for f in files if today_str not in f]
+
+if not completed_files:
+    print("❌ No completed prediction files found (today’s file excluded).")
+    exit()
+
+latest_file = completed_files[-1]
 print(f"🗂️ Evaluating predictions in: {latest_file}")
 
-# Step 2: Load predictions and historical data
+# Step 3: Load predictions and market data
 df_preds = pd.read_csv(latest_file)
 df_data = pd.read_csv(DATA_PATH)
 
-# Step 3: Evaluation logic
+# Step 4: Evaluation logic
 def get_next_price(ticker, timestamp):
     subset = df_data[(df_data["Ticker"] == ticker) & (df_data["Timestamp"] > timestamp)]
     if subset.empty:
@@ -43,6 +62,6 @@ for _, row in df_preds.iterrows():
 
     results.append({**row, "Comparison Price": next_price, "Actual Outcome": outcome})
 
-# Step 4: Save results back to the same file
+# Step 5: Overwrite file with evaluated results
 pd.DataFrame(results).to_csv(latest_file, index=False)
 print("✅ Evaluation complete. Updated:", latest_file)
